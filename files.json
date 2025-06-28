@@ -406,6 +406,20 @@
       "created": "2025-05-13"
     },
     {
+      "id": "ai-seo-strategy",
+      "path": "2025-06-28-tech-ai-seo-strategy.html",
+      "title": "AI時代のSEO戦略",
+      "description": "AI技術の進化に対応したSEO戦略とその実践方法",
+      "tags": [
+        "SEO",
+        "AI",
+        "マーケティング",
+        "検索エンジン最適化",
+        "戦略"
+      ],
+      "created": "2025-06-28"
+    },
+    {
       "id": "obsidian",
       "path": "2025-05-06-tech-obsidian.html",
       "title": "Obsidian ディレクトリ構造の例",

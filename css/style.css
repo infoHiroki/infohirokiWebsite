@@ -211,10 +211,10 @@ img {
 }
 
 .faq-q {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   color: var(--color-accent);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   line-height: 1.5;
 }
 
@@ -236,8 +236,8 @@ img {
   }
   
   .faq-q {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 19px;
+    margin-bottom: 12px;
   }
   
   .faq-a {
