@@ -194,7 +194,7 @@ img {
    FAQ スタイル
    ======================================================================== */
 .faq-item {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
   border-left: 4px solid var(--color-accent);
   background: rgba(231, 62, 143, 0.03);
   border-radius: 8px;
