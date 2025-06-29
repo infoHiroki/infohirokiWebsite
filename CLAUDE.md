@@ -110,7 +110,7 @@ git push origin main
 ### 今後の改善点
 - [ ] 残り記事へのcanonical URL追加
 - [ ] パンくずリストの実装
-- [ ] 内部リンク構造の強化
+- [x] 内部リンク構造の強化（習慣関連記事で実装済み）
 - [ ] E-A-T（専門性・権威性・信頼性）の強化
 
 ## Vercelデプロイメント
@@ -148,6 +148,79 @@ about.html（スキルスタックページ）では、技術スタックのア�
     vertical-align: middle;
 }
 ```
+
+## 内部リンク構造
+
+### 概要
+記事間の内部リンクを実装することで、ユーザーの回遊性とSEO効果を向上させます。現在、習慣関連記事（9記事）で内部リンク構造を実装済みです。
+
+### 実装済み記事グループ
+- ✅ **習慣形成関連記事（9記事）**: 相互リンク済み
+  - 基礎理論記事から実践記事へのリンク
+  - 実践記事から理論基盤へのリンク
+  - 関連概念記事間の相互参照
+
+### 内部リンク実装ガイドライン
+
+#### 1. リンクパス形式
+```html
+<!-- 正しい形式（ブログシステムが自動的にhtml-files/を追加） -->
+<a href="2025-03-30-habit-loop-structure.html" class="related-link">
+
+<!-- 間違った形式（重複エラーになる） -->
+<a href="html-files/2025-03-30-habit-loop-structure.html" class="related-link">
+```
+
+#### 2. 関連記事セクションのHTMLテンプレート
+```html
+<div class="related-articles">
+    <h3>関連記事</h3>
+    <div class="related-links">
+        <a href="[ファイル名.html]" class="related-link">
+            <h4>[記事タイトル]</h4>
+            <p>[簡潔な説明文]</p>
+        </a>
+        <!-- 4-6記事程度推奨 -->
+    </div>
+</div>
+```
+
+#### 3. CSSスタイリング
+記事のアクセントカラーに合わせたスタイリング：
+```css
+.related-articles {
+    background-color: [アクセントカラーの薄い版];
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px 0;
+}
+
+.related-link:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 2px 8px [アクセントカラーのrgba版];
+    transform: translateY(-2px);
+}
+```
+
+#### 4. リンク戦略
+- **Hub記事**: 基礎理論記事は多くの関連記事にリンク
+- **論理的関係**: 前提→応用、理論→実践の流れを重視
+- **相互参照**: 同レベルの概念記事間でクロスリンク
+- **適度な数**: 1記事あたり4-6個の関連記事リンク
+
+### 今後の実装予定記事グループ
+- [ ] **Claude Code関連記事（4記事）**: 最優先
+- [ ] **Python開発関連記事（4記事）**: 高優先度
+- [ ] **デザインツール関連記事（6記事）**: 中優先度
+- [ ] **AI・教育関連記事（3記事）**: 中優先度
+- [ ] **DevOps・インフラ関連記事（3記事）**: 中優先度
+
+### SEO効果
+- ページ権威（Page Authority）の分散
+- クロール深度の改善
+- ユーザー滞在時間の延長
+- 関連キーワードの強化
 
 ## 重要な注意事項
 
