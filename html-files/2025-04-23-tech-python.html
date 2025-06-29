@@ -191,12 +191,145 @@
             z-index: 1;
             transform-origin: 0 0;
         }
+        /* 関連記事セクション */
+        .related-articles {
+            padding: 30px 20px;
+            background: linear-gradient(135deg, rgba(48, 105, 152, 0.05), rgba(255, 212, 59, 0.05));
+            border-top: 3px solid #306998;
+        }
+        .related-heading {
+            text-align: center;
+            font-size: 2em;
+            color: #306998;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .related-heading:before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #306998, #FFD43B);
+            border-radius: 2px;
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .related-card {
+            display: flex;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(48, 105, 152, 0.1);
+            padding: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(48, 105, 152, 0.1);
+        }
+        .related-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(48, 105, 152, 0.2);
+            border-color: #306998;
+        }
+        .related-icon {
+            font-size: 2.5em;
+            margin-right: 15px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(48, 105, 152, 0.1), rgba(255, 212, 59, 0.1));
+            border-radius: 50%;
+        }
+        .related-content {
+            flex: 1;
+        }
+        .related-content h4 {
+            margin: 0 0 8px 0;
+            color: #306998;
+            font-size: 1.1em;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+        .related-content p {
+            margin: 0 0 12px 0;
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .related-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #306998, #4a7ba7);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 500;
+        }
+        .tag:nth-child(2n) {
+            background: linear-gradient(135deg, #FFD43B, #f4c430);
+            color: #333;
+        }
+        
         footer {
             text-align: center;
             padding: 20px;
             background-color: #333;
             color: white;
             font-size: 0.9em;
+        }
+        
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            .related-articles {
+                padding: 20px 15px;
+            }
+            .related-heading {
+                font-size: 1.6em;
+                margin-bottom: 20px;
+            }
+            .related-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .related-card {
+                padding: 15px;
+                flex-direction: column;
+                text-align: center;
+            }
+            .related-icon {
+                margin: 0 auto 10px auto;
+                font-size: 2em;
+                width: 50px;
+                height: 50px;
+            }
+            .related-content h4 {
+                font-size: 1em;
+            }
+            .related-content p {
+                font-size: 0.85em;
+            }
+            .related-tags {
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -409,6 +542,77 @@
                         <div class="framework-desc">繰り返し処理を一行で簡潔に記述し、コード量を削減する</div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- 関連記事セクション -->
+        <div class="related-articles">
+            <h3 class="related-heading">関連記事</h3>
+            <div class="related-grid">
+                <a href="2025-04-22-tech-fastapibasicexplanation.html" class="related-card">
+                    <div class="related-icon">🚀</div>
+                    <div class="related-content">
+                        <h4>FastAPI基本解説</h4>
+                        <p>URLのパスの一部を変数として使用</p>
+                        <div class="related-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">WebAPI</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="2025-05-13-tech-whisper-ai-guide.html" class="related-card">
+                    <div class="related-icon">🎤</div>
+                    <div class="related-content">
+                        <h4>Whisper AI 実装ガイド</h4>
+                        <p>Pythonを使った音声認識AIの導入と活用方法</p>
+                        <div class="related-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">音声認識</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="2025-05-16-tech-apscheduler.html" class="related-card">
+                    <div class="related-icon">⏰</div>
+                    <div class="related-content">
+                        <h4>APScheduler概要</h4>
+                        <p>APSchedulerはPythonで定期的にジョブを実行できるライブラリで、PCの電源が入...</p>
+                        <div class="related-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">APScheduler</span>
+                            <span class="tag">定期実行</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="2025-06-09-tech-uv-python-package-manager-comp.html" class="related-card">
+                    <div class="related-icon">📦</div>
+                    <div class="related-content">
+                        <h4>UV - 超高速Python Package Manager 完全ガイド</h4>
+                        <p>Rust製超高速Python Package Manager</p>
+                        <div class="related-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">UV</span>
+                            <span class="tag">パッケージマネージャー</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="2025-05-24-tech-serverside-programming-languages-guide.html" class="related-card">
+                    <div class="related-icon">🖥️</div>
+                    <div class="related-content">
+                        <h4>サーバーサイドプログラミング言語ガイド</h4>
+                        <p>サーバーサイドプログラミング言語12言語の完全ガイド</p>
+                        <div class="related-tags">
+                            <span class="tag">サーバーサイド</span>
+                            <span class="tag">プログラミング言語</span>
+                            <span class="tag">バックエンド</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         

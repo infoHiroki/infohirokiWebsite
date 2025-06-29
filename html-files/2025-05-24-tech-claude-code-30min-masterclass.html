@@ -74,6 +74,57 @@
             padding: 10px;
             margin: 10px 0;
         }
+        
+        .related-articles {
+            background-color: rgba(229, 185, 182, 0.1);
+            border: 2px solid #e5b9b6;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .related-articles h2 {
+            color: #e5b9b6;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            text-align: center;
+        }
+        
+        .related-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        
+        .related-link {
+            background-color: white;
+            border: 1px solid #d0dde2;
+            border-radius: 8px;
+            padding: 15px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        .related-link:hover {
+            border-color: #e5b9b6;
+            box-shadow: 0 2px 8px rgba(229, 185, 182, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .related-link h4 {
+            color: #88c0d0;
+            margin: 0 0 8px 0;
+            font-size: 1.1em;
+        }
+        
+        .related-link p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.4;
+        }
     </style>
 </head>
 <body>
@@ -278,6 +329,26 @@
             <li>Boris氏が聴衆に感謝を述べる。</li>
             <li>最後のスライドにはセッションフィードバック用のQRコードが表示される。</li>
         </ul>
+    </section>
+    
+    <section>
+        <h2>関連記事</h2>
+        <div class="related-articles">
+            <div class="related-links">
+                <a href="2025-06-05-tech-claude-code-comprehensive-guide.html" class="related-link">
+                    <h4>Claude Code 完全ガイド</h4>
+                    <p>Claude Codeの基本機能から高度な使い方まで網羅的に解説</p>
+                </a>
+                <a href="2025-06-26-tech-claude-code.html" class="related-link">
+                    <h4>Claude Codeがエンジニアの働き方を変える</h4>
+                    <p>AI時代の新しい開発スタイルと生存戦略、エンジニアの働き方の変化</p>
+                </a>
+                <a href="2025-06-22-tech-claude-code-features-summary.html" class="related-link">
+                    <h4>Claude Code 機能まとめ</h4>
+                    <p>プランモード、料金体系、便利機能の詳細な解説</p>
+                </a>
+            </div>
+        </div>
     </section>
 
 </body>

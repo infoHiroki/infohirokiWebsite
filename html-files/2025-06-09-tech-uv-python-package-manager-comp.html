@@ -388,6 +388,138 @@
             color: #ffd93d;
         }
         
+        .related-articles-section {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-left: 6px solid #ff6b6b;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .related-articles-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .related-articles-section h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .related-articles-section h2::before {
+            content: "🔗";
+        }
+        
+        .related-articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .related-article {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .related-article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            border-color: #ff6b6b;
+        }
+        
+        .related-article::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,107,107,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .related-article:hover::before {
+            left: 100%;
+        }
+        
+        .related-article-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+        }
+        
+        .related-article-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .related-article h4 {
+            color: #ff6b6b;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .related-article p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .related-article-link {
+            display: inline-block;
+            color: #ffd93d;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            background: rgba(255,217,61,0.2);
+            border-radius: 20px;
+            border: 1px solid #ffd93d;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .related-article-link:hover {
+            background: #ffd93d;
+            color: #2c3e50;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,217,61,0.4);
+        }
+        
+        .related-article-link::before {
+            content: "→";
+            margin-right: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .related-article-link:hover::before {
+            transform: translateX(3px);
+        }
+        
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -411,6 +543,10 @@
             }
             
             .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .related-articles-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -605,6 +741,38 @@ uv init my-project
                         <h4>🛠️ ツール管理</h4>
                         <p>開発ツールをグローバルに管理</p>
                         <div class="code-block">uv tool install ruff black</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-articles-section">
+                <h2>関連記事</h2>
+                <div class="related-articles-grid">
+                    <div class="related-article">
+                        <div class="related-article-icon">🐍</div>
+                        <div class="related-article-content">
+                            <h4>Python フレームワークと便利なツール</h4>
+                            <p>Pythonの総合的なフレームワークとツールの解説</p>
+                            <a href="/html-files/2025-04-23-tech-python.html" class="related-article-link">詳細を見る</a>
+                        </div>
+                    </div>
+                    
+                    <div class="related-article">
+                        <div class="related-article-icon">⚡</div>
+                        <div class="related-article-content">
+                            <h4>FastAPI基本解説</h4>
+                            <p>高性能なPython Webフレームワークの基本を解説</p>
+                            <a href="/html-files/2025-04-22-tech-fastapibasicexplanation.html" class="related-article-link">詳細を見る</a>
+                        </div>
+                    </div>
+                    
+                    <div class="related-article">
+                        <div class="related-article-icon">🎤</div>
+                        <div class="related-article-content">
+                            <h4>Whisper AI 実装ガイド</h4>
+                            <p>OpenAIのWhisperを使った音声認識システムの実装</p>
+                            <a href="/html-files/2025-05-13-tech-whisper-ai-guide.html" class="related-article-link">詳細を見る</a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -70,6 +70,61 @@
       margin-top: 0;
       color: #0066ff;
     }
+    .related-articles {
+      margin: 40px 0;
+      padding: 0;
+    }
+    .related-articles h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #0066ff;
+      text-align: left;
+      border-bottom: 2px solid #0066ff;
+      padding-bottom: 8px;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .related-card {
+      background: #f8faff;
+      border: 1px solid #e1e8f7;
+      border-radius: 8px;
+      padding: 20px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .related-card:hover {
+      background: #eef4ff;
+      border-color: #0066ff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 102, 255, 0.15);
+    }
+    .related-card h4 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+      color: #0066ff;
+      font-weight: 600;
+    }
+    .related-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+    }
+    .related-tag {
+      display: inline-block;
+      background: #0066ff;
+      color: white;
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 12px;
+      margin-top: 8px;
+      font-weight: 500;
+    }
     .footer {
       margin-top: 40px;
       padding-top: 20px;
@@ -197,6 +252,29 @@
       
       <div class="tip">
         <strong>プロのヒント：</strong> モバイルナビゲーションやレスポンシブデザインの詳細についてはFramerのYouTubeチャンネルに専用動画があります。
+      </div>
+    </div>
+    
+    <div class="related-articles">
+      <h3>関連記事</h3>
+      <div class="related-grid">
+        <a href="2025-05-16-design-figma-to-responsive-web-guide.html" class="related-card">
+          <h4>Figma レスポンシブウェブガイド</h4>
+          <p>Figmaからレスポンシブウェブサイトを作成する最簡単方法</p>
+          <span class="related-tag">同じFigmaワークフロー</span>
+        </a>
+        
+        <a href="2025-05-14-design-framer-practical-manual.html" class="related-card">
+          <h4>Framer 実践マニュアル</h4>
+          <p>Framerの実践的な操作方法とショートカット集</p>
+          <span class="related-tag">Framerの詳細操作</span>
+        </a>
+        
+        <a href="2025-05-14-design-framer-html-extension-guide.html" class="related-card">
+          <h4>Framer HTML拡張ガイド</h4>
+          <p>FramerのHTML取り込み拡張機能の使い方</p>
+          <span class="related-tag">Framerの高度機能</span>
+        </a>
       </div>
     </div>
     

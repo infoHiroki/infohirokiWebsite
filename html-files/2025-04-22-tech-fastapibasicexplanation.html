@@ -88,6 +88,48 @@
                 grid-template-columns: 1fr;
             }
         }
+        .related-articles {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .related-article {
+            display: block;
+            text-decoration: none;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            background-color: #fafafa;
+        }
+        .related-article:hover {
+            border-color: #9C27B0;
+            background-color: #f3e5f5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(156, 39, 176, 0.15);
+        }
+        .related-article-content h3 {
+            color: #2C3E50;
+            margin: 0 0 10px 0;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+        .related-article-content p {
+            color: #666;
+            margin: 0 0 15px 0;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        .related-tag {
+            display: inline-block;
+            background-color: #9C27B0;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -309,6 +351,33 @@
         <div class="summary">
             <h2>要約</h2>
             <p>FastAPIはPythonで簡単にWebAPIを作れるフレームワークで、HTTPリクエストメソッド（GET/POST/PUT/DELETE）に対応したエンドポイントを短いコードで実装できる。パスパラメーター、クエリパラメーター、リクエストボディ、ヘッダーなど様々なデータ受け渡し方法をサポートし、Pydanticモデルによるデータ検証機能も備える。自動ドキュメント生成や非同期処理対応など開発効率を高める機能が充実しており、Pythonの型アノテーションを活用した直感的なコーディングが可能。複数のシステム間でのデータ連携やフロントエンドとバックエンドの分離など、現代的なWeb開発に最適なツールである。</p>
+        </div>
+
+        <div class="card">
+            <h2 style="color: #9C27B0; border-left: 5px solid #9C27B0; padding-left: 15px;">関連記事</h2>
+            <div class="related-articles">
+                <a href="2025-04-23-tech-python.html" class="related-article">
+                    <div class="related-article-content">
+                        <h3>Python フレームワークと便利なツール</h3>
+                        <p>FastAPIを含むPythonの主要フレームワークと開発ツールの総合ガイド。Web開発からデータ分析まで幅広いツールを紹介。</p>
+                        <span class="related-tag">上位概念</span>
+                    </div>
+                </a>
+                <a href="2025-06-09-tech-uv-python-package-manager-comp.html" class="related-article">
+                    <div class="related-article-content">
+                        <h3>UV - 超高速Python Package Manager 完全ガイド</h3>
+                        <p>FastAPI開発環境を高速で構築できるUVパッケージマネージャーの使い方と従来ツールとの比較。</p>
+                        <span class="related-tag">開発環境</span>
+                    </div>
+                </a>
+                <a href="2025-05-24-tech-serverside-programming-languages-guide.html" class="related-article">
+                    <div class="related-article-content">
+                        <h3>サーバーサイドプログラミング言語 完全ガイド</h3>
+                        <p>FastAPIを含むサーバーサイド言語の特徴と選択基準。各言語の強みと適用場面を詳しく解説。</p>
+                        <span class="related-tag">技術比較</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </body>

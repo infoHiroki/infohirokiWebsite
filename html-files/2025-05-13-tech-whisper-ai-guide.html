@@ -91,6 +91,50 @@
             margin: 15px 0;
             font-size: 0.9em;
         }
+        .related-articles {
+            background-color: #f5f9ff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            border: 1px solid #4285f4;
+        }
+        .related-articles h3 {
+            color: #4285f4;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .related-articles-list {
+            list-style: none;
+            padding: 0;
+        }
+        .related-articles-list li {
+            margin-bottom: 12px;
+            padding: 12px 15px;
+            background-color: white;
+            border-radius: 5px;
+            border-left: 4px solid #4285f4;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .related-articles-list li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(66, 133, 244, 0.15);
+        }
+        .related-articles-list a {
+            text-decoration: none;
+            color: #4285f4;
+            font-weight: 500;
+            display: block;
+        }
+        .related-articles-list a:hover {
+            color: #3367d6;
+        }
+        .related-articles-list .article-description {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
     </style>
 </head>
 <body>
@@ -242,6 +286,24 @@ print(result["text"])</div>
 
     <div class="note">
         <p><strong>GPU使用状況の確認方法:</strong> NVIDIAのGPUを使用している場合は、<code>nvidia-smi</code>コマンドを実行することでGPUの使用状況を確認できます。</p>
+    </div>
+
+    <div class="related-articles">
+        <h3>関連記事</h3>
+        <ul class="related-articles-list">
+            <li>
+                <a href="2025-04-23-tech-python.html">Python フレームワークと便利なツール</a>
+                <div class="article-description">Whisper AI開発の基盤となるPythonフレームワークや開発に役立つツールを紹介</div>
+            </li>
+            <li>
+                <a href="2025-05-16-tech-apscheduler.html">APScheduler概要</a>
+                <div class="article-description">音声処理の定期実行や自動化に活用できるPythonスケジューリングライブラリの使い方</div>
+            </li>
+            <li>
+                <a href="2025-06-09-tech-uv-python-package-manager-comp.html">UV - 超高速Python Package Manager 完全ガイド</a>
+                <div class="article-description">Whisper AI開発環境を効率的に構築できる次世代Pythonパッケージマネージャー</div>
+            </li>
+        </ul>
     </div>
 
     <div class="summary">

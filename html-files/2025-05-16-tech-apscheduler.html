@@ -67,6 +67,67 @@
             font-family: monospace;
             color: #4ca8af;
         }
+        .related-articles {
+            margin-top: 40px;
+            padding: 30px 0;
+            border-top: 2px solid #e6f3f4;
+        }
+        .related-articles h2 {
+            color: #4ca8af;
+            text-align: center;
+            margin-bottom: 25px;
+            border-left: none;
+            padding-left: 0;
+        }
+        .related-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+        .related-card {
+            display: block;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            border-left: 4px solid #4ca8af;
+        }
+        .related-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(76, 168, 175, 0.2);
+            background-color: #ffffff;
+        }
+        .related-card h3 {
+            color: #4ca8af;
+            margin: 0 0 10px 0;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+        .related-card p {
+            color: #666;
+            margin: 0 0 15px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        .related-tag {
+            display: inline-block;
+            background-color: #e6f3f4;
+            color: #4ca8af;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 500;
+            margin-right: 6px;
+            margin-bottom: 4px;
+        }
+        @media (min-width: 768px) {
+            .related-container {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
     </style>
 </head>
 <body>
@@ -146,6 +207,33 @@
         <p>
             APSchedulerはPythonで定期的にジョブを実行できるライブラリで、PCの電源が入っている間、様々な自動化タスクを実行できます。使用方法は簡単で、まず実行したい処理を関数として定義し、BlockingSchedulerを使ってスケジュールを設定します。ジョブは一定間隔（秒、分、時間単位）または特定の時刻に実行するよう設定でき、複数のジョブを同時に登録することも可能です。実践例として、notify-pyライブラリを使った休憩通知の実装方法が紹介されています。Pythonプロセスをシェルから切り離してバックグラウンドで実行する方法も解説されており、これによりコンソールを閉じてもジョブが継続して実行されます。APSchedulerは作業効率化に役立つ便利なツールです。
         </p>
+    </div>
+
+    <div class="related-articles">
+        <h2>関連記事</h2>
+        <div class="related-container">
+            <a href="2025-04-23-tech-python.html" class="related-card">
+                <h3>Python フレームワークと便利なツール</h3>
+                <p>Pythonエコシステムの包括的ガイド。APSchedulerを含む定期実行ツールの選択肢を理解するための上位概念</p>
+                <span class="related-tag">Python</span>
+                <span class="related-tag">フレームワーク</span>
+                <span class="related-tag">開発ツール</span>
+            </a>
+            <a href="2025-04-22-tech-fastapibasicexplanation.html" class="related-card">
+                <h3>FastAPI基本解説</h3>
+                <p>Webアプリケーションでの定期タスク実行。APSchedulerとFastAPIを組み合わせたバックエンドサービス構築</p>
+                <span class="related-tag">Python</span>
+                <span class="related-tag">FastAPI</span>
+                <span class="related-tag">WebAPI</span>
+            </a>
+            <a href="2025-05-13-tech-whisper-ai-guide.html" class="related-card">
+                <h3>Whisper AI 実装ガイド</h3>
+                <p>音声処理の自動化実例。APSchedulerを使って音声認識タスクを定期実行する応用例として活用可能</p>
+                <span class="related-tag">AI</span>
+                <span class="related-tag">Whisper</span>
+                <span class="related-tag">音声認識</span>
+            </a>
+        </div>
     </div>
 </body>
 </html>
