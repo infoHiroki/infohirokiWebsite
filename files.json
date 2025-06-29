@@ -473,6 +473,123 @@
         "開発ツール"
       ],
       "created": "2025-04-19"
+    },
+    {
+      "id": "habit-small-start-principle",
+      "path": "2025-03-30-habit-small-start-principle.html",
+      "title": "効果的な習慣形成には小さく始めることが基本原則である",
+      "description": "習慣形成の最も基本的かつ効果的な原則である「小さく始める」ことの重要性を解説",
+      "tags": [
+        "習慣形成",
+        "心理学",
+        "戦略",
+        "小さな習慣"
+      ],
+      "created": "2025-03-30"
+    },
+    {
+      "id": "habit-environment-design",
+      "path": "2025-03-30-habit-environment-design.html",
+      "title": "環境設計が習慣の定着度を決定する",
+      "description": "習慣形成における環境設計の決定的な影響力と実践的な環境デザイン戦略",
+      "tags": [
+        "習慣形成",
+        "環境デザイン",
+        "心理学",
+        "行動変容"
+      ],
+      "created": "2025-03-30"
+    },
+    {
+      "id": "habit-bj-fogg-behavior-model",
+      "path": "2025-03-30-habit-bj-fogg-behavior-model.html",
+      "title": "習慣のはじまりを説明する行動モデルBJ Fogg",
+      "description": "BJ Foggの行動モデル（B=MAP）による習慣形成の「起動段階」の力学解説",
+      "tags": [
+        "習慣形成",
+        "心理学",
+        "行動モデル",
+        "BJ Fogg"
+      ],
+      "created": "2025-03-30"
+    },
+    {
+      "id": "habit-small-is-key",
+      "path": "2025-03-30-habit-small-is-key.html",
+      "title": "習慣の小ささが定着の鍵である",
+      "description": "微小な行動から始めることが長期的定着の決定的要因となる原理の詳細解説",
+      "tags": [
+        "習慣形成",
+        "戦略",
+        "タイニーハビット",
+        "持続性"
+      ],
+      "created": "2025-03-30"
+    },
+    {
+      "id": "habit-systems-thinking",
+      "path": "2025-03-30-habit-systems-thinking.html",
+      "title": "習慣の集合体（システム思考）が目標達成よりも習慣形成に効果的である",
+      "description": "目標設定よりもシステム（習慣の集合体）構築に焦点を当てるアプローチの効果性",
+      "tags": [
+        "習慣形成",
+        "システム思考",
+        "心理学",
+        "目標設定"
+      ],
+      "created": "2025-03-30"
+    },
+    {
+      "id": "habit-identity-based",
+      "path": "2025-03-30-habit-identity-based.html",
+      "title": "アイデンティティベースの習慣形成が最も持続可能である",
+      "description": "自己概念（アイデンティティ）の変容に基づく最も強力で持続可能な習慣形成方法",
+      "tags": [
+        "習慣形成",
+        "アイデンティティ",
+        "心理学",
+        "持続性"
+      ],
+      "created": "2025-03-30"
+    },
+    {
+      "id": "habit-loop-structure",
+      "path": "2025-03-30-habit-loop-structure.html",
+      "title": "習慣ループの構造が行動変容の基盤である",
+      "description": "Charles Duhiggの習慣ループ「キュー→ルーティン→報酬」による行動変容の基盤理論",
+      "tags": [
+        "習慣形成",
+        "心理学",
+        "習慣ループ",
+        "Charles Duhigg"
+      ],
+      "created": "2025-03-30"
+    },
+    {
+      "id": "habit-four-laws-james-clear",
+      "path": "2025-03-30-habit-four-laws-james-clear.html",
+      "title": "James Clearの習慣形成4法則はループ理論を発展させた",
+      "description": "習慣ループ理論を実践的に発展させたJames Clearの4法則フレームワーク",
+      "tags": [
+        "習慣形成",
+        "行動モデル",
+        "James Clear",
+        "Atomic Habits"
+      ],
+      "created": "2025-03-30"
+    },
+    {
+      "id": "habit-environment-design-essence",
+      "path": "2025-03-29-habit-environment-design-essence.html",
+      "title": "習慣形成の本質は環境デザインにある",
+      "description": "意志力や動機付けより環境をデザインすることが習慣形成の本質である理由と実践方法",
+      "tags": [
+        "習慣形成",
+        "環境デザイン",
+        "行動変容",
+        "システム設計"
+      ],
+      "created": "2025-03-29"
     }
   ]
 }

@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Disallow crawling of specific files/directories
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+Disallow: /*.json$
+
+# Allow crawling of main pages and blog posts
+Allow: /index.html
+Allow: /blog.html
+Allow: /about.html
+Allow: /services.html
+Allow: /products.html
+Allow: /results.html
+Allow: /contact.html
+Allow: /faq.html
+Allow: /html-files/
+
+# Sitemap location
+Sitemap: https://infohiroki.com/sitemap.xml
