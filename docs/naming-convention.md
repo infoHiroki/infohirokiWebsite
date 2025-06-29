@@ -50,7 +50,12 @@ infoHirokiブログのHTMLファイル統一管理を目的とした命名規則
 
 1. **命名規則に従ってファイル名を決定**
 2. **`files.json`に対応するエントリを追加**
-3. **blog.htmlで表示確認**
+3. **SEO対策: canonical URLを追加（推奨）**
+   ```html
+   <link rel="canonical" href="https://infohiroki.com/html-files/YYYY-MM-DD-description.html">
+   ```
+4. **`sitemap.xml`への追加を検討**
+5. **blog.htmlで表示確認**
 
 ### ファイル名生成例
 
@@ -71,11 +76,13 @@ const filename = `${today}-${content}.html`;
 3. **一貫性**: 統一された形式で管理しやすい
 4. **検索性**: パターンマッチングによる検索が容易
 5. **ブログ統合**: infoHirokiサイトとの統合が容易
+6. **SEO対策**: canonical URLで重複コンテンツ問題を回避
+7. **検索エンジン最適化**: robots.txt、sitemap.xmlで適切にインデックス
 
 ---
 
 **作成日**: 2025年6月28日  
 **更新日**: 2025年6月29日  
 **対象**: infoHiroki ブログシステム  
-**バージョン**: 2.0.0  
-**変更内容**: カテゴリコード制約を廃止し、より柔軟な命名規則に変更
+**バージョン**: 2.1.0  
+**変更内容**: SEO対策（canonical URL、sitemap.xml）の手順を追加

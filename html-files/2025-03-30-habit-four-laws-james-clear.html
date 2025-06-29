@@ -175,6 +175,57 @@
             margin-bottom: 10px;
         }
 
+        .related-articles {
+            background-color: rgba(233, 30, 99, 0.1);
+            border: 2px solid var(--accent-color);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .related-articles h3 {
+            color: var(--accent-color);
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .related-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .related-link {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .related-link:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 2px 8px rgba(233, 30, 99, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .related-link h4 {
+            color: var(--accent-color);
+            margin: 0 0 8px 0;
+            font-size: 1.1em;
+        }
+
+        .related-link p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.4;
+        }
+
         @media (max-width: 768px) {
             .content {
                 padding: 20px;
@@ -341,14 +392,35 @@
                 <li>デジタル習慣とフィジカル習慣では、どの法則が特に重要になるか？</li>
             </ul>
 
-            <h2>関連するトピック</h2>
-            <ul>
-                <li>習慣ループの構造が行動変容の基盤である - 基本的な習慣ループ理論</li>
-                <li>習慣形成の本質は環境デザインにある - Clearの「明確化」「容易化」法則と密接に関連</li>
-                <li>Atomic Habits - 原著書の要約と主要概念</li>
-                <li>習慣のはじまりを説明する行動モデルBJ Fogg - 関連する行動変容モデル</li>
-                <li>習慣を持続させる最終状態はアイデンティティベース - Clearが提唱する習慣形成の根本原理</li>
-            </ul>
+            <div class="related-articles">
+                <h3>関連記事</h3>
+                <div class="related-links">
+                    <a href="2025-03-30-habit-loop-structure.html" class="related-link">
+                        <h4>習慣ループの構造</h4>
+                        <p>基本的な習慣ループ理論とClearの4法則の関係</p>
+                    </a>
+                    <a href="2025-03-30-habit-environment-design.html" class="related-link">
+                        <h4>環境設計が習慣の定着度を決定する</h4>
+                        <p>Clearの「明確化」「容易化」法則と環境設計</p>
+                    </a>
+                    <a href="2025-03-30-habit-bj-fogg-behavior-model.html" class="related-link">
+                        <h4>BJ Foggの行動モデル</h4>
+                        <p>関連する行動変容モデルと理論比較</p>
+                    </a>
+                    <a href="2025-03-30-habit-small-start-principle.html" class="related-link">
+                        <h4>効果的な習慣形成の小さく始める原則</h4>
+                        <p>Clearの2分ルールと小さく始める戦略の理論</p>
+                    </a>
+                    <a href="2025-03-30-habit-identity-based.html" class="related-link">
+                        <h4>アイデンティティベースの習慣形成</h4>
+                        <p>Clearが提唱する習慣形成の最高峰アプローチ</p>
+                    </a>
+                    <a href="2025-03-30-habit-systems-thinking.html" class="related-link">
+                        <h4>習慣の集合体（システム思考）</h4>
+                        <p>システム思考の実践とClearのアプローチ</p>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -4,7 +4,7 @@
 
 ## プロジェクト概要
 
-infohirokiWebsiteは、vanilla HTML/CSS/JavaScriptで構築された静的ウェブサイトで、GitHub Pagesでinfohiroki.comとしてホストされています。ブログシステムを統合した個人/プロフェッショナルサイトです。
+infohirokiWebsiteは、vanilla HTML/CSS/JavaScriptで構築された静的ウェブサイトで、Vercelでinfohiroki.comとしてホストされています。ブログシステムを統合した個人/プロフェッショナルサイトです。
 
 ## アーキテクチャ
 
@@ -21,6 +21,8 @@ infohirokiWebsiteは、vanilla HTML/CSS/JavaScriptで構築された静的ウェ
 - `js/main.js`: コア機能（ナビゲーション、クリップボード、モバイルメニュー）
 - `js/auto-scan.js`: ブログ記事の読み込みと検索機能
 - `css/style.css`: CSS変数を使用した統一デザインシステム
+- `robots.txt`: 検索エンジンクロール制御
+- `sitemap.xml`: サイト構造をGoogleに通知
 
 ## コマンド
 
@@ -38,7 +40,7 @@ npx http-server
 
 ### Git操作
 ```bash
-# GitHub Pagesへのデプロイ（mainへのpushで自動）
+# Vercelへのデプロイ（mainへのpushで自動）
 git add .
 git commit -m "コミットメッセージ"
 git push origin main
@@ -64,6 +66,11 @@ git push origin main
    }
    ```
 
+3. SEO対策のcanonical URLを追加（推奨）：
+   ```html
+   <link rel="canonical" href="https://infohiroki.com/html-files/YYYY-MM-DD-description.html">
+   ```
+
 ### ファイル命名規則
 - 日付形式: `YYYY-MM-DD`（ゼロパディング必須）
 - 説明: 英語/ローマ字、ハイフン区切り、20文字以内推奨
@@ -86,16 +93,31 @@ git push origin main
 - モバイルメニューはハンバーガーパターンを使用
 - サイドバーはモバイルでオーバーレイに変換
 
-## SEOとパフォーマンス
+## SEO・AIO・LLMO対策
 
-- 各ページにメタタグ、OGP、構造化データを含む
+### 実装済み対策
+- ✅ 各ページにメタタグ、OGP、構造化データを含む
+- ✅ robots.txt（検索エンジンクロール制御）
+- ✅ sitemap.xml（全ページのURL一覧）
+- ✅ 重要記事にcanonical URL設定済み
+- ✅ レスポンシブデザイン（モバイルファースト）
+- ✅ 高品質なコンテンツ（技術記事・実用的ガイド）
+
+### パフォーマンス最適化
 - 画像はレイアウトの安定性のため明示的なwidth/heightを使用
 - CSSは適切な場所でGPUアクセラレーションを使用
 
-## GitHub Pagesデプロイメント
+### 今後の改善点
+- [ ] 残り記事へのcanonical URL追加
+- [ ] パンくずリストの実装
+- [ ] 内部リンク構造の強化
+- [ ] E-A-T（専門性・権威性・信頼性）の強化
 
-- ドメイン: infohiroki.com（CNAMEファイルで設定）
+## Vercelデプロイメント
+
+- ドメイン: infohiroki.com（Vercelダッシュボードで設定）
 - デプロイ: mainブランチへのpushで自動
+- SSL証明書の自動発行・更新
 - CI/CDパイプライン不要
 
 ## スキルスタックのアイコン表示
@@ -134,3 +156,5 @@ about.html（スキルスタックページ）では、技術スタックのア�
 3. **ブログシステム**: 記事追加時は必ずHTMLファイルと`files.json`の両方を更新
 4. **テスト**: push前にシンプルなHTTPサーバーでローカルテスト
 5. **ブラウザ互換性**: CSS GridとFlexboxをサポートする最新ブラウザを対象
+6. **SEO対策**: 新規記事作成時はcanonical URLの追加を推奨
+7. **サイトマップ更新**: 新規記事追加時はsitemap.xmlへの追加も検討
