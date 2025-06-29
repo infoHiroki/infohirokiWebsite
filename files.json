@@ -461,6 +461,19 @@
       "created": "2025-04-22"
     },
     {
+      "id": "notion-subscription-management",
+      "path": "2024-03-28-notion-subscription-management.html",
+      "title": "Notion『かんたんサブスク管理』無料配布！",
+      "description": "Notionを使ったサブスクリプション管理テンプレートを無料配布。月額サービスの支払い状況を一元管理し、無駄な出費を防止できます。",
+      "tags": [
+        "note",
+        "Notion",
+        "テンプレート",
+        "サブスク管理"
+      ],
+      "created": "2024-03-28"
+    },
+    {
       "id": "react",
       "path": "2025-04-19-tech-react.html",
       "title": "React ライブラリ・ツール インフォグラフィック",

@@ -143,6 +143,62 @@
       margin: 15px 0;
       font-style: italic;
     }
+    .related-articles {
+      margin-top: 40px;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+    }
+    .related-articles h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #05f;
+      border-bottom: 2px solid #05f;
+      padding-bottom: 8px;
+    }
+    .related-articles-list {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+    }
+    .related-articles-list td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+      vertical-align: middle;
+    }
+    .related-articles-list tr:last-child td {
+      border-bottom: none;
+    }
+    .related-articles-list tr:hover {
+      background-color: #f5f5f5;
+    }
+    .related-link {
+      text-decoration: none;
+      color: #05f;
+      font-weight: 500;
+      font-size: 16px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .related-link:hover {
+      text-decoration: underline;
+    }
+    .related-description {
+      color: #666;
+      font-size: 14px;
+      margin: 0;
+    }
+    .related-tag {
+      display: inline-block;
+      background-color: #05f;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      margin-right: 8px;
+    }
     .footer {
       margin-top: 40px;
       padding-top: 20px;
@@ -537,6 +593,34 @@
       </tr>
     </table>
     
+    <div class="related-articles">
+      <h2>関連記事</h2>
+      <table class="related-articles-list">
+        <tr>
+          <td>
+            <a href="2025-05-14-design-figma-to-framer-guide.html" class="related-link">
+              FigmaからFramerへのインポートガイド
+            </a>
+            <p class="related-description">
+              <span class="related-tag">ワークフロー連携</span>
+              FigmaデザインをFramerに効率的にインポートする方法とベストプラクティスを詳しく解説します。
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="2025-05-14-design-framer-html-extension-guide.html" class="related-link">
+              FramerのHTML取り込み拡張機能ガイド
+            </a>
+            <p class="related-description">
+              <span class="related-tag">高度機能</span>
+              カスタムHTMLコンポーネントの作成方法と、より高度なFramer機能の活用法を学びます。
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
     <div class="footer">
       Framer操作マニュアル - 効率的なウェブサイト制作のために
     </div>
