@@ -1,6 +1,75 @@
 {
   "files": [
     {
+      "id": "book-world-class-engineer-thinking-memo",
+      "path": "2024-05-17-book-world-class-engineer-thinking-memo.html",
+      "title": "本『世界一流エンジニアの思考法』メモ",
+      "description": "牛尾剛著『世界一流エンジニアの思考法』の書評とメモ。サーバントリーダーシップ、効率的な働き方、チームビルディングなど、エンジニアの生産性向上に関する実践的な知見をまとめました。",
+      "tags": [
+        "note",
+        "読書",
+        "エンジニア",
+        "思考法",
+        "技術"
+      ],
+      "created": "2024-05-17"
+    },
+    {
+      "id": "gas-terminology-collection",
+      "path": "2024-05-20-gas-terminology-collection.html",
+      "title": "楽しいGAS用語集",
+      "description": "Google Apps Script（GAS）の用語を楽しく覚えられる用語集です。GAS開発に役立つ基本用語をまとめています。",
+      "tags": [
+        "note",
+        "GAS",
+        "Google Apps Script",
+        "用語集",
+        "自動化"
+      ],
+      "created": "2024-05-20"
+    },
+    {
+      "id": "programming-terminology-collection",
+      "path": "2024-05-20-programming-terminology-collection.html",
+      "title": "楽しいプログラミング用語集",
+      "description": "プログラミングの基本用語を楽しく覚えられる用語集です。初心者から中級者まで役立つ技術用語をまとめています。",
+      "tags": [
+        "note",
+        "プログラミング",
+        "用語集",
+        "教育"
+      ],
+      "created": "2024-05-20"
+    },
+    {
+      "id": "prompt-design-guide",
+      "path": "2024-05-19-prompt-design-guide.html",
+      "title": "プロンプトデザインまとめ。たまに見るといい。",
+      "description": "効果的なプロンプトデザインの基本原則とテクニックをまとめました。ChatGPTやAIツールを使う際に参考になるガイドです。",
+      "tags": [
+        "note",
+        "AI",
+        "プロンプト",
+        "ChatGPT",
+        "設計"
+      ],
+      "created": "2024-05-19"
+    },
+    {
+      "id": "book-output-reading-technique-memo",
+      "path": "2024-04-08-book-output-reading-technique-memo.html",
+      "title": "本『自己肯定感を上げる OUTPUT読書術』のメモ",
+      "description": "アバタロー著『自己肯定感を上げる OUTPUT読書術』の読書メモ。効果的な読書方法と要約・発信までの具体的な流れを解説します。",
+      "tags": [
+        "note",
+        "読書",
+        "読書術",
+        "自己啓発",
+        "OUTPUT"
+      ],
+      "created": "2024-04-08"
+    },
+    {
       "id": "vscode-github-copilot",
       "path": "2025-06-27-tech-vscode-github-copilot.html",
       "title": "VSコード講座まとめ",
@@ -474,6 +543,19 @@
       "created": "2024-03-28"
     },
     {
+      "id": "notion-save-to-notion-extension",
+      "path": "2024-03-27-notion-save-to-notion-extension.html",
+      "title": "Notion Web ClipperよりSave to Notionの方がおすすめだよ〜",
+      "description": "Chrome拡張機能「Save to Notion」の紹介記事です。",
+      "tags": [
+        "note",
+        "Notion",
+        "ツール",
+        "Chrome拡張"
+      ],
+      "created": "2024-03-27"
+    },
+    {
       "id": "react",
       "path": "2025-04-19-tech-react.html",
       "title": "React ライブラリ・ツール インフォグラフィック",
@@ -590,6 +672,20 @@
         "Atomic Habits"
       ],
       "created": "2025-03-30"
+    },
+    {
+      "id": "chatgpt-reskilling-guide",
+      "path": "2024-03-29-chatgpt-reskilling-guide.html",
+      "title": "ChatGPTでリスキリング",
+      "description": "現代はリスキリングが必須な時代です。ChatGPTを活用して効果的なリスキリングを実現し、キャリア形成や戦略を立てる方法を詳しく解説します。",
+      "tags": [
+        "note",
+        "ChatGPT",
+        "AI",
+        "リスキリング",
+        "キャリア"
+      ],
+      "created": "2024-03-29"
     },
     {
       "id": "habit-environment-design-essence",

@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notion Web ClipperよりSave to Notionの方がおすすめだよ〜</title>
-    <link rel="canonical" href="https://infohiroki.com/html-files/2024-03-27-notion-save-to-notion-extension.html">
+    <title>プロンプトデザインまとめ。たまに見るといい。</title>
+    <link rel="canonical" href="https://infohiroki.com/html-files/2024-05-19-prompt-design-guide.html">
+    <meta name="description" content="効果的なプロンプトデザインの基本原則とテクニックをまとめました。ChatGPTやAIツールを使う際に参考になるガイドです。">
+    <meta name="keywords" content="プロンプト, AI, ChatGPT, 設計, プロンプトエンジニアリング">
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -23,7 +25,7 @@
             overflow: hidden;
         }
         header {
-            background: linear-gradient(135deg, #000000, #37352F);
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             padding: 30px 20px;
             text-align: center;
@@ -38,40 +40,13 @@
             padding: 30px;
         }
         .content h2 {
-            color: #37352F;
-            border-bottom: 2px solid #37352F;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
             padding-bottom: 5px;
         }
         .content h3 {
-            color: #37352F;
+            color: #764ba2;
             margin-top: 25px;
-        }
-        .content p {
-            margin-bottom: 15px;
-        }
-        .content ul, .content ol {
-            margin-bottom: 15px;
-            padding-left: 25px;
-        }
-        .content li {
-            margin-bottom: 8px;
-        }
-        .content a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .content a:hover {
-            text-decoration: underline;
-        }
-        .content figure {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .content img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .meta {
             background-color: #f5f5f5;
@@ -85,7 +60,7 @@
         }
         .tag {
             display: inline-block;
-            background-color: #37352F;
+            background-color: #667eea;
             color: white;
             padding: 3px 8px;
             border-radius: 12px;
@@ -119,33 +94,54 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="article-nav article-nav-top">
-        <a href="../blog.html" class="back-link">← ブログ一覧</a>
-    </nav>
     <div class="container">
         <header>
-            <h1>Notion Web ClipperよりSave to Notionの方がおすすめだよ〜</h1>
+            <h1>プロンプトデザインまとめ。たまに見るといい。</h1>
         </header>
 
         <div class="content">
-            <figure>
-                <img src="/images/note/n5bd6a5429a8d_f51d3670f70986994ad23e07ff48907d.png" alt="Save to Notion拡張機能">
-            </figure>
+            <p>効果的なプロンプトデザインのポイントをまとめました。AIツールを使う際の参考にしてください。</p>
             
-            <p>Chrome拡張機能「Save to Notion」の紹介記事です。</p>
-            <p><a href="https://chromewebstore.google.com/detail/save-to-notion/ldmmifpegigmeammaeckplhnjbbpccmm" target="_blank" rel="noopener">https://chromewebstore.google.com/detail/save-to-notion/ldmmifpegigmeammaeckplhnjbbpccmm</a></p>
+            <h2>基本原則</h2>
+            <ul>
+                <li>具体的で明確な指示を心がける</li>
+                <li>文脈や背景情報を提供する</li>
+                <li>期待する出力形式を明示する</li>
+                <li>段階的に指示を組み立てる</li>
+            </ul>
+
+            <h2>効果的なテクニック</h2>
+            <h3>1. ロールプレイング</h3>
+            <p>「〜の専門家として」「〜の立場で」といった役割を指定する。</p>
+
+            <h3>2. 例示（Few-shot learning）</h3>
+            <p>期待する回答の例を示すことで、精度を向上させる。</p>
+
+            <h3>3. 段階的思考（Chain of Thought）</h3>
+            <p>「ステップバイステップで考えて」と指示し、思考過程を見える化する。</p>
+
+            <h3>4. 制約の明示</h3>
+            <p>文字数制限、形式指定、禁止事項などを明確に伝える。</p>
+
+            <h2>避けるべきこと</h2>
+            <ul>
+                <li>曖昧な表現</li>
+                <li>複数の要求を一度に詰め込む</li>
+                <li>文脈不足</li>
+                <li>主観的すぎる評価基準</li>
+            </ul>
         </div>
 
         <div class="meta">
-            <div>公開日: 2024年3月27日</div>
+            <div>公開日: 2024年5月19日</div>
             <div class="tags">
                 <span class="tag">note</span>
-                <span class="tag">Notion</span>
-                <span class="tag">ツール</span>
-                <span class="tag">Chrome拡張</span>
+                <span class="tag">AI</span>
+                <span class="tag">プロンプト</span>
+                <span class="tag">ChatGPT</span>
+                <span class="tag">設計</span>
             </div>
         </div>
         
@@ -153,9 +149,5 @@
             note記事アーカイブ - infohiroki.com
         </footer>
     </div>
-    
-    <nav class="article-nav article-nav-bottom">
-        <a href="../blog.html" class="back-to-list">他の記事を読む</a>
-    </nav>
 </body>
 </html>

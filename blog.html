@@ -474,7 +474,7 @@
         function openFile(path) {
             // pathが既にhtml-files/で始まっている場合はそのまま、そうでなければ追加
             const fullPath = path.startsWith('html-files/') ? path : `html-files/${path}`;
-            window.open(fullPath, '_blank');
+            window.location.href = fullPath;
         }
         
         // 記事を表示
