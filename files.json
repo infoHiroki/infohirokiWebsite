@@ -530,19 +530,6 @@
       "created": "2025-04-22"
     },
     {
-      "id": "notion-subscription-management",
-      "path": "2024-03-28-notion-subscription-management.html",
-      "title": "Notion『かんたんサブスク管理』無料配布！",
-      "description": "Notionを使ったサブスクリプション管理テンプレートを無料配布。月額サービスの支払い状況を一元管理し、無駄な出費を防止できます。",
-      "tags": [
-        "note",
-        "Notion",
-        "テンプレート",
-        "サブスク管理"
-      ],
-      "created": "2024-03-28"
-    },
-    {
       "id": "notion-save-to-notion-extension",
       "path": "2024-03-27-notion-save-to-notion-extension.html",
       "title": "Notion Web ClipperよりSave to Notionの方がおすすめだよ〜",
@@ -699,6 +686,24 @@
         "システム設計"
       ],
       "created": "2025-03-29"
+    },
+    {
+      "id": "chatgpt-ai-tools-4selection",
+      "path": "2024-11-20-chatgpt-ai-tools-4selection.html",
+      "title": "ChatGPTから2年以上。実務に生き残ったAIツール4選",
+      "description": "ChatGPT登場から2年経過後も実務で活用し続けているAIツール4選：Claude、Genspark、Midjourney、gammaの特徴と使い分けを解説。",
+      "tags": [
+        "note",
+        "AI",
+        "ChatGPT",
+        "Claude",
+        "Genspark",
+        "Midjourney",
+        "gamma",
+        "実務活用",
+        "生産性向上"
+      ],
+      "created": "2024-11-20"
     }
   ]
 }
