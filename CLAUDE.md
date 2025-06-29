@@ -71,7 +71,7 @@ git push origin main
    <link rel="canonical" href="https://infohiroki.com/html-files/YYYY-MM-DD-description.html">
    ```
 
-4. 統一CSSとナビゲーションを追加：
+4. 統一CSSとナビゲーションを追加（必須）：
    ```html
    <head>
        <!-- 既存のメタタグ等 -->
@@ -90,10 +90,47 @@ git push origin main
    </body>
    ```
 
+**注意**: 2025年6月29日以降の新規記事では、上記のナビゲーション要素とCSSリンクが必須となります。統一されたユーザー体験の維持のため、必ず含めてください。
+
 ### ファイル命名規則
-- 日付形式: `YYYY-MM-DD`（ゼロパディング必須）
-- 説明: 英語/ローマ字、ハイフン区切り、20文字以内推奨
-- 例: `2025-06-28-ai-seo-strategy.html`
+
+#### 基本パターン
+```
+{日付}-{内容説明}.html
+```
+
+#### 日付形式
+- **必須**: `YYYY-MM-DD`（ゼロパディング必須）
+- 年は4桁、月・日は2桁
+- 作成日または主要更新日を使用
+
+#### 内容説明部分
+1. **英語またはローマ字を使用**
+2. **単語間はハイフン（-）で区切り**
+3. **簡潔で分かりやすく**
+4. **20文字以内を推奨**
+
+#### 良い例
+- `2025-06-28-ai-seo-strategy.html`（AI時代のSEO戦略）
+- `2025-06-26-go-tutorial.html`（Go言語チュートリアル）
+- `2025-05-24-claude-code-features.html`（Claude Code機能紹介）
+
+#### 避けるべき例
+- `GoLanguageTutorialForBeginners.html`（長すぎる）
+- `go_tutorial.html`（アンダースコア使用）
+- `Go言語.html`（日本語使用）
+- `tutorial123.html`（無意味な数字）
+
+#### ファイル名生成例
+```javascript
+// 現在の日付を取得
+const today = new Date().toISOString().split('T')[0]; // "2025-06-26"
+
+// 内容から生成
+const content = "react-hooks-guide";
+const filename = `${today}-${content}.html`;
+// 結果: "2025-06-26-react-hooks-guide.html"
+```
 
 ## CSS変数とテーマ設定
 
@@ -324,6 +361,141 @@ about.html（スキルスタックページ）では、技術スタックのア�
 - 上部・下部ナビゲーション追加
 - 統一CSSリンク追加
 - レスポンシブ対応スタイリング
+
+## ファイル名変更手順
+
+既存の不適切な名前のHTMLファイルを命名規則に従って変更する手順：
+
+### 1. 現在のファイル内容を確認
+```bash
+# ファイルの内容を確認して、適切な内容説明を考える
+cat "html-files/不適切なファイル名.html" | head -50
+```
+タイトルタグ（`<title>`）を確認して、記事の内容を把握します。
+
+### 2. ファイルの作成日を取得
+```bash
+# macOSの場合
+stat -f "%m" "html-files/不適切なファイル名.html" | xargs -I {} date -r {} "+%Y-%m-%d"
+
+# Linuxの場合
+stat -c "%Y" "html-files/不適切なファイル名.html" | xargs -I {} date -d "@{}" "+%Y-%m-%d"
+```
+
+### 3. 新しいファイル名を決定
+以下の要素を組み合わせて新しいファイル名を作成：
+- **日付**: YYYY-MM-DD形式（ステップ2で取得）
+- **内容説明**: 英語またはローマ字、ハイフンで単語を区切る、20文字以内推奨
+
+### 4. ファイル名を変更
+```bash
+mv "html-files/古いファイル名.html" "html-files/2025-06-28-new-filename.html"
+```
+
+### 5. files.jsonを更新
+`files.json`のエントリを更新：
+```json
+{
+  "id": "new-filename",
+  "path": "2025-06-28-new-filename.html",
+  "title": "記事タイトル",
+  "description": "記事の要約（50-100文字程度）",
+  "tags": ["関連キーワード"],
+  "created": "2025-06-28"
+}
+```
+
+### 6. 変更の確認
+```bash
+# ファイルが正しく移動されたか確認
+ls -la html-files/2025-06-28-new-filename.html
+
+# files.jsonが正しく更新されたか確認
+grep "new-filename" files.json
+```
+
+### よくある間違い
+1. **日付形式の誤り**: 必ず`YYYY-MM-DD`形式を使用（ゼロパディング必須）
+2. **内容説明の不明瞭さ**: 記事内容がわかるクリアな説明を使用
+3. **アンダースコアの使用**: ハイフン（-）を使用し、アンダースコア（_）は使わない
+4. **日本語の使用**: ファイル名には英語またはローマ字のみを使用
+5. **files.jsonの更新忘れ**: ファイル名変更後は必ずfiles.jsonも更新する
+
+## サイト構成とナビゲーション
+
+### サイト構成
+```
+infohiroki/
+├── index.html              # ホームページ
+├── about.html              # 自己紹介
+├── services.html           # サービス一覧
+├── products.html           # 製品・プラン
+├── results.html            # 実績
+├── contact.html            # お問い合わせ
+├── blog.html               # ブログ（記事一覧）
+├── faq.html                # よくある質問
+├── auto-scan.js            # ブログシステム
+├── files.json              # 記事メタデータ
+├── css/style.css           # 統一スタイル
+├── js/main.js              # メイン機能
+├── html-files/             # ブログ記事
+└── robots.txt, sitemap.xml # SEO関連
+```
+
+### メインメニュー
+- **ホーム** (`index.html`)
+- **自己紹介** (`about.html`)
+- **サービス** (`services.html`)
+- **プラン** (`products.html`)
+- **実績** (`results.html`)
+- **ブログ** (`blog.html`)
+- **FAQ** (`faq.html`)
+- **お問い合わせ** (`contact.html`)
+
+### デザインシステム
+
+#### カラーパレット
+- **プライマリ**: ピンク系（#E73E8F）
+- **テキスト**: グレー系（#333155）
+- **背景**: ホワイト系（#FFFFFF）
+- **アクセント**: ダークグレー（#333155）
+
+### 検索機能
+- **フィールド**: タイトル、説明、タグ
+- **リアルタイム検索**: 300msデバウンス
+- **ソート**: 日付順・タイトル順
+
+### パフォーマンス
+- **FCP**: < 1.5s
+- **LCP**: < 2.5s
+- **CLS**: < 0.1
+- CSS/JSの最小化
+- 画像の最適化
+- レスポンシブ画像対応
+- GPU加速の活用
+
+### セキュリティ
+- XSS対策（テキスト表示時）
+- CSRFトークン（フォーム）
+- HTTPSリダイレクト
+
+### Analytics追跡対象
+- ページビュー
+- ブログ記事閲覧
+- お問い合わせ送信
+- サービス詳細閲覧
+
+### 開発環境
+
+#### 必要ツール
+- ローカルサーバー（Live Server等）
+- ブラウザ開発者ツール
+- Git（バージョン管理）
+
+#### テスト
+- レスポンシブテスト
+- ブラウザ互換性
+- パフォーマンステスト
 
 ## 重要な注意事項
 
