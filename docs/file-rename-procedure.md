@@ -104,4 +104,4 @@ grep "ai-seo-strategy" files.json
 
 ## 関連ドキュメント
 - [命名規則ガイド](naming-convention.md)
-- [ブログシステム概要](blog-system-overview.md)
+- [統合システムガイド](integration-guide.md)

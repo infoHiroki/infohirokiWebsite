@@ -63,7 +63,7 @@ infohiroki/
   "files": [
     {
       "id": "unique-id",
-      "path": "2025-06-26-tech-example.html",
+      "path": "2025-06-26-example-article.html",
       "title": "記事タイトル",
       "description": "記事の説明",
       "tags": ["タグ1", "タグ2"],
