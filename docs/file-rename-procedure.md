@@ -6,32 +6,23 @@
 ## 命名規則
 ### フォーマット
 ```
-{date}-{category}-{content-description}.html
+{date}-{content-description}.html
 ```
 
 ### 例
 ```
-2025-06-28-tech-ai-seo-strategy.html
+2025-06-28-ai-seo-strategy.html
 ```
-
-## カテゴリコード一覧
-| カテゴリ | コード | 説明 | 例 |
-|----------|--------|------|-----|
-| システム・制度 | `system` | 政府制度、補助金、法的制度 | `system-education-training` |
-| 教育・AI | `edu` | 教育、AI、学習コンテンツ | `edu-ai-summary` |
-| 技術・開発 | `tech` | プログラミング、開発技術 | `tech-go-tutorial` |
-| デザイン | `design` | UI/UX、グラフィック | `design-color-guide` |
-| ビジネス | `biz` | 経営、マーケティング | `biz-strategy-plan` |
 
 ## 手順
 
 ### 1. 現在のファイル内容を確認
 ```bash
-# ファイルの内容を確認して、適切なカテゴリと内容を判断
+# ファイルの内容を確認して、適切な内容説明を考える
 cat "html-files/code (6).html" | head -50
 ```
 
-タイトルタグ（`<title>`）を確認して、記事の内容を把握します。
+タイトルタグ（`<title>`）を確認して、記事の内容を把握します。カテゴリは不要になりましたので、内容を表す説明のみを考えます。
 
 ### 2. ファイルの作成日を取得
 ```bash
@@ -45,7 +36,6 @@ stat -c "%Y" "html-files/code (6).html" | xargs -I {} date -d "@{}" "+%Y-%m-%d"
 ### 3. 新しいファイル名を決定
 以下の要素を組み合わせて新しいファイル名を作成：
 - **日付**: YYYY-MM-DD形式（ステップ2で取得）
-- **カテゴリ**: 上記の表から適切なものを選択
 - **内容説明**: 
   - 英語またはローマ字
   - ハイフンで単語を区切る
@@ -55,7 +45,7 @@ stat -c "%Y" "html-files/code (6).html" | xargs -I {} date -d "@{}" "+%Y-%m-%d"
 ### 4. ファイル名を変更
 ```bash
 # ファイル名を変更
-mv "html-files/code (6).html" "html-files/2025-06-28-tech-ai-seo-strategy.html"
+mv "html-files/code (6).html" "html-files/2025-06-28-ai-seo-strategy.html"
 ```
 
 ### 5. files.jsonを更新
@@ -64,7 +54,7 @@ mv "html-files/code (6).html" "html-files/2025-06-28-tech-ai-seo-strategy.html"
 ```json
 {
   "id": "ai-seo-strategy",
-  "path": "2025-06-28-tech-ai-seo-strategy.html",
+  "path": "2025-06-28-ai-seo-strategy.html",
   "title": "AI時代のSEO戦略",
   "description": "AI技術の進化に対応したSEO戦略とその実践方法",
   "tags": [
@@ -89,14 +79,14 @@ mv "html-files/code (6).html" "html-files/2025-06-28-tech-ai-seo-strategy.html"
 ### 6. 変更の確認
 ```bash
 # ファイルが正しく移動されたか確認
-ls -la html-files/2025-06-28-tech-ai-seo-strategy.html
+ls -la html-files/2025-06-28-ai-seo-strategy.html
 
 # files.jsonが正しく更新されたか確認
 grep "ai-seo-strategy" files.json
 ```
 
 ## チェックリスト
-- [ ] ファイルの内容を確認し、適切なカテゴリを選択した
+- [ ] ファイルの内容を確認し、適切な内容説明を考えた
 - [ ] ファイルの作成日または更新日を取得した
 - [ ] 命名規則に従った新しいファイル名を決定した
 - [ ] ファイル名を変更した
@@ -107,7 +97,7 @@ grep "ai-seo-strategy" files.json
 
 ## よくある間違い
 1. **日付形式の誤り**: 必ず`YYYY-MM-DD`形式を使用（ゼロパディング必須）
-2. **カテゴリコードの誤り**: 上記の5つのカテゴリコードのみを使用
+2. **内容説明の不明瞭さ**: 記事内容がわかるクリアな説明を使用
 3. **アンダースコアの使用**: ハイフン（-）を使用し、アンダースコア（_）は使わない
 4. **日本語の使用**: ファイル名には英語またはローマ字のみを使用
 5. **files.jsonの更新忘れ**: ファイル名変更後は必ずfiles.jsonも更新する

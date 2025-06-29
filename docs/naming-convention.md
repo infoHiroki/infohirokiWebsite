@@ -7,13 +7,13 @@ infoHirokiブログのHTMLファイル統一管理を目的とした命名規則
 ## 🎯 基本パターン
 
 ```
-{日付}-{カテゴリ}-{内容説明}.html
+{日付}-{内容説明}.html
 ```
 
 ### 例
-- `2025-06-26-tech-go-tutorial.html`
-- `2025-12-15-system-tax-reform.html`
-- `2026-01-10-design-ui-guide.html`
+- `2025-06-26-go-tutorial.html`
+- `2025-12-15-tax-reform-guide.html`
+- `2026-01-10-ui-design-principles.html`
 
 ## 📅 日付形式
 
@@ -23,15 +23,6 @@ infoHirokiブログのHTMLファイル統一管理を目的とした命名規則
 - 月・日は2桁（ゼロパディング）
 - 作成日または主要更新日を使用
 
-## 🏷️ カテゴリコード
-
-| カテゴリ | コード | 説明 | 例 |
-|---------|-------|------|-----|
-| 制度・補助金 | `system` | 政府制度、補助金、法制度 | `system-education-training` |
-| 教育・AI | `edu` | 教育、AI、学習コンテンツ | `edu-ai-summary` |
-| 技術・開発 | `tech` | プログラミング、開発技術 | `tech-go-tutorial` |
-| デザイン | `design` | UI/UX、グラフィック | `design-color-guide` |
-| ビジネス | `biz` | 経営、マーケティング | `biz-strategy-plan` |
 
 ## 📝 内容説明部分
 
@@ -43,9 +34,9 @@ infoHirokiブログのHTMLファイル統一管理を目的とした命名規則
 
 ### 良い例
 - `go-tutorial` （Go言語チュートリアル）
-- `claude-code` （Claude Code関連）
-- `llmo-checklist` （LLMOチェックリスト）
-- `education-training` （教育訓練制度）
+- `claude-code-features` （Claude Code機能紹介）
+- `ai-seo-strategy` （AI時代のSEO戦略）
+- `education-training-support` （教育訓練支援制度）
 
 ### 避けるべき例
 - `GoLanguageTutorialForBeginners` （長すぎる）
@@ -67,17 +58,16 @@ infoHirokiブログのHTMLファイル統一管理を目的とした命名規則
 // 現在の日付を取得
 const today = new Date().toISOString().split('T')[0]; // "2025-06-26"
 
-// カテゴリと内容から生成
-const category = "tech";
-const content = "react-hooks";
-const filename = `${today}-${category}-${content}.html`;
-// 結果: "2025-06-26-tech-react-hooks.html"
+// 内容から生成
+const content = "react-hooks-guide";
+const filename = `${today}-${content}.html`;
+// 結果: "2025-06-26-react-hooks-guide.html"
 ```
 
 ## 📈 メリット
 
 1. **時系列管理**: 日付でソートが容易
-2. **カテゴリ識別**: ファイル名でカテゴリが即座に判別
+2. **内容の明確化**: ファイル名で記事内容が即座に判別
 3. **一貫性**: 統一された形式で管理しやすい
 4. **検索性**: パターンマッチングによる検索が容易
 5. **ブログ統合**: infoHirokiサイトとの統合が容易
@@ -85,5 +75,7 @@ const filename = `${today}-${category}-${content}.html`;
 ---
 
 **作成日**: 2025年6月28日  
+**更新日**: 2025年6月29日  
 **対象**: infoHiroki ブログシステム  
-**バージョン**: 1.0.0
+**バージョン**: 2.0.0  
+**変更内容**: カテゴリコード制約を廃止し、より柔軟な命名規則に変更

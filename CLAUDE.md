@@ -49,15 +49,14 @@ git push origin main
 ### 新規記事の追加
 1. 命名規則に従って`html-files/`にHTMLファイルを作成：
    ```
-   YYYY-MM-DD-category-description.html
+   YYYY-MM-DD-description.html
    ```
-   カテゴリ: `system`, `edu`, `tech`, `design`, `biz`
 
 2. `files.json`に記事メタデータを追加：
    ```json
    {
      "id": "ファイル名の説明部分",
-     "path": "YYYY-MM-DD-category-description.html",
+     "path": "YYYY-MM-DD-description.html",
      "title": "記事タイトル",
      "description": "簡潔な説明（50-100文字）",
      "tags": ["タグ1", "タグ2"],
@@ -67,18 +66,18 @@ git push origin main
 
 ### ファイル命名規則
 - 日付形式: `YYYY-MM-DD`（ゼロパディング必須）
-- カテゴリ: 事前定義されたカテゴリのみ使用
 - 説明: 英語/ローマ字、ハイフン区切り、20文字以内推奨
-- 例: `2025-06-28-tech-ai-seo-strategy.html`
+- 例: `2025-06-28-ai-seo-strategy.html`
 
 ## CSS変数とテーマ設定
 
 サイトは一貫したテーマのためにCSSカスタムプロパティを使用：
 ```css
---color-primary: #2c3e50;
---color-accent: #3498db;
---color-text: #333;
---color-bg: #f4f6f8;
+--color-text: #000000;        /* 純黒 - メインテキスト */
+--color-text-light: #666666;  /* ミディアムグレー - 副次テキスト */
+--color-background: #FFFFFF;  /* 純白 - 背景 */
+--color-border: #CCCCCC;      /* ライトグレー - ボーダー */
+--color-accent: #E73E8F;      /* ピンク - アクセントカラー */
 ```
 
 ## モバイルレスポンシブ
@@ -98,6 +97,35 @@ git push origin main
 - ドメイン: infohiroki.com（CNAMEファイルで設定）
 - デプロイ: mainブランチへのpushで自動
 - CI/CDパイプライン不要
+
+## スキルスタックのアイコン表示
+
+about.html（スキルスタックページ）では、技術スタックのアイコンを2つの方法で表示：
+
+### 1. Skill Icons (推奨)
+```html
+<img src="https://skillicons.dev/icons?i=react" class="tech-icon" alt="React">
+```
+利用可能なアイコン: https://skillicons.dev/
+- 言語: python, js, ts, go, java, rust, cpp など
+- フレームワーク: react, nextjs, vue, django, fastapi など
+- ツール: docker, k8s, git, github, vscode など
+
+### 2. 絵文字アイコン
+```html
+<span class="tech-icon">🤖</span>
+```
+抽象的な概念や、Skill Iconsにないものに使用
+
+### スタイル定義
+```css
+.tech-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+```
 
 ## 重要な注意事項
 
