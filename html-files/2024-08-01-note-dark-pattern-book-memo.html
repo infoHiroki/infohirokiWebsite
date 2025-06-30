@@ -1,0 +1,198 @@
+<\!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本「ダークパターン 人を欺くデザインの手口と対策」のメモ</title>
+    <meta name="description" content="本「ダークパターン 人を欺くデザインの手口と対策」のメモの詳細記事です。実践的な知見と具体的な手法について解説します。">
+    <link rel="canonical" href="https://infohiroki.com/html-files/2024-08-01-note-dark-pattern-book-memo.html">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        :root {
+            --accent-color: #48BB78;
+            --secondary-color: #68D391;
+            --bg-gradient-start: #F0FFF4;
+            --bg-gradient-end: #F7FAFC;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Yu Gothic', YuGothic, Verdana, Meiryo, 'M+ 1p', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .content h2 {
+            color: var(--accent-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            font-size: 1.4rem;
+            margin-top: 2rem;
+        }
+        
+        .content h3 {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .content p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+        
+        .content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        
+        .content ul, .content ol {
+            padding-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .content blockquote {
+            border-left: 4px solid var(--accent-color);
+            background: var(--bg-gradient-start);
+            padding: 20px;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+        
+        .meta {
+            background: #f8f9fa;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+        
+        .tag:hover {
+            background: var(--secondary-color);
+            transform: translateY(-1px);
+        }
+        
+        .date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .meta {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="article-nav article-nav-top">
+        <a href="../blog.html" class="back-link">← ブログ一覧</a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <span class="icon">📚</span>
+            <h1>本「ダークパターン 人を欺くデザインの手口と対策」のメモ</h1>
+        </div>
+        
+        <div class="content">
+            <figure name="d5581b19-e2fe-4cf2-8911-be2cf73356c5"><img src="/images/note/n848e2f9f46ad_6ae449a06de7c3684ec7165472952a70.png"><figcaption></figcaption></figure><p name="33e24841-61cf-4d57-9697-e648ef23593f" id="33e24841-61cf-4d57-9697-e648ef23593f">ネットの海を長いこと泳いでいると気がつくことがある。<br>とにかくバカを騙そうとしているなということとか。<br>もしくはたまたまバカな瞬間を狙っているなとか。<br>いろんな方法でミスを誘う。</p><p name="852bfef6-c863-4bcf-b756-1dacd055dd72"><a href="https://www.amazon.co.jp/%E3%83%80%E3%83%BC%E3%82%AF%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3-%E4%BA%BA%E3%82%92%E6%AC%BA%E3%81%8F%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%89%8B%E5%8F%A3%E3%81%A8%E5%AF%BE%E7%AD%96-%E3%83%8F%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%96%E3%83%AA%E3%83%8C%E3%83%AB/dp/4802512937/ref=pd_sbs_d_sccl_3_1/358-3107100-9167063?pd_rd_w=44CP9&amp;content-id=amzn1.sym.99f902cf-fc99-4f25-a4a5-78eda3eec3ef&amp;pf_rd_p=99f902cf-fc99-4f25-a4a5-78eda3eec3ef&amp;pf_rd_r=Z2QJHKB4Q7RDWFW301ZD&amp;pd_rd_wg=OHzrn&amp;pd_rd_r=fd763f30-d656-4ada-9d70-906c797ae012&amp;pd_rd_i=4802512937&amp;psc=1">https://www.amazon.co.jp/%E3%83%80%E3%83%BC%E3%82%AF%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3-%E4%BA%BA%E3%82%92%E6%AC%BA%E3%81%8F%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%81%AE%E6%89%8B%E5%8F%A3%E3%81%A8%E5%AF%BE%E7%AD%96-%E3%83%8F%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%96%E3%83%AA%E3%83%8C%E3%83%AB/dp/4802512937/ref=pd_sbs_d_sccl_3_1/358-3107100-9167063?pd_rd_w=44CP9&amp;content-id=amzn1.sym.99f902cf-fc99-4f25-a4a5-78eda3eec3ef&amp;pf_rd_p=99f902cf-fc99-4f25-a4a5-78eda3eec3ef&amp;pf_rd_r=Z2QJHKB4Q7RDWFW301ZD&amp;pd_rd_wg=OHzrn&amp;pd_rd_r=fd763f30-d656-4ada-9d70-906c797ae012&amp;pd_rd_i=4802512937&amp;psc=1</a></p><p name="386528b8-8836-414f-9f21-960d5b2254ab" id="386528b8-8836-414f-9f21-960d5b2254ab">そのミスを誘う方法を突き詰めた本がダークパターンだと思う。<br>「あーあるよね、それ」とか「最近新しい手法を出してきているな」とかかれこれインターネットの誕生とともにずっと見てきた気がする。</p><p name="a206c9ca-f9d2-446c-8984-afbdd96e6ca7" id="a206c9ca-f9d2-446c-8984-afbdd96e6ca7"><br></p>
+        </div>
+        
+        <div class="meta">
+            <div class="date">公開日: 2024-08-01</div>
+            <div class="tags">
+                <span class="tag">note</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="article-nav article-nav-bottom">
+        <a href="../blog.html" class="back-to-list">他の記事を読む</a>
+    </nav>
+</body>
+</html>

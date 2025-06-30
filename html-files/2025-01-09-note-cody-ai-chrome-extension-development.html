@@ -1,0 +1,221 @@
+<\!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Cody】AI駆動開発でChrome拡張機能をつくった話。【YoutubeTranscriptCopier】</title>
+    <meta name="description" content="AI駆動開発ツールCodyを使ってChrome拡張機能（YoutubeTranscriptCopier）を開発した実体験レポート。Codyの使い方、開発プロセス、メリット・デメリットを詳しく解説します。">
+    <link rel="canonical" href="https://infohiroki.com/html-files/2025-01-09-note-cody-ai-chrome-extension-development.html">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        :root {
+            --accent-color: #FF6B35;
+            --secondary-color: #FF8A5B;
+            --bg-gradient-start: #FFF4F0;
+            --bg-gradient-end: #FFEEE6;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Yu Gothic', YuGothic, Verdana, Meiryo, 'M+ 1p', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .content h2 {
+            color: var(--accent-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            font-size: 1.4rem;
+            margin-top: 2rem;
+        }
+        
+        .content h3 {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .content p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+        
+        .content figure {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        
+        .content ul, .content ol {
+            padding-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .content blockquote {
+            border-left: 4px solid var(--accent-color);
+            background: var(--bg-gradient-start);
+            padding: 20px;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+        
+        .content code {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9em;
+        }
+        
+        .content pre {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        
+        .meta {
+            background: #f8f9fa;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+        
+        .tag:hover {
+            background: var(--secondary-color);
+            transform: translateY(-1px);
+        }
+        
+        .date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .meta {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="article-nav article-nav-top">
+        <a href="../blog.html" class="back-link">← ブログ一覧</a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <span class="icon">🛠️</span>
+            <h1>【Cody】AI駆動開発でChrome拡張機能をつくった話。【YoutubeTranscriptCopier】</h1>
+        </div>
+        
+        <div class="content">
+            <figure name="856f081e-679a-4ad6-8884-cb96d496a7ed"><img src="/images/note/n292f3cb79952_e9f7042ea767d8c5b7373c7df43af1dc.png"><figcaption></figcaption></figure><p name="087f3308-71e9-4754-9b9c-e6b7bfe7f4fb"><a href="https://chromewebstore.google.com/detail/youtube-transcript-copier/pjogfgkppdcjmgehjfecjdjfhpjapiph?authuser=0&amp;hl=ja">https://chromewebstore.google.com/detail/youtube-transcript-copier/pjogfgkppdcjmgehjfecjdjfhpjapiph?authuser=0&amp;hl=ja</a></p><h2 name="b206608e-89d5-4d80-9079-4b23af57ec03" id="b206608e-89d5-4d80-9079-4b23af57ec03">Youtube TranscriptCopierをつくったよ</h2><p name="749a697b-9d79-4482-a59f-53a3362c4825" id="749a697b-9d79-4482-a59f-53a3362c4825">ということで、まず何を作ったのかです。<br>Youtubeの文字起こしをコピーしてくれるツールです。</p><p name="7d685715-46b5-4dc3-a9cc-6ad698c4ac22" id="7d685715-46b5-4dc3-a9cc-6ad698c4ac22">ただの文字起こしだけのコピーもしてくれるし、プロンプトを入れておけば「プロンプト＋文字起こし」のコピーもできます。プロンプトは入力欄に入れれば、そのまま勝手に保存されます。<br><br>テンプレートも三つだけ用意していて、要約してねって趣旨のやつを三種類✖️3言語分用意しました。<br>英語、日本語、中国語で、内容はおんなじです。</p><p name="08379e85-a397-4422-9ac2-0b37159096c3" id="08379e85-a397-4422-9ac2-0b37159096c3">私はよくYoutubeでリサーチとか学習をするので、文字起こしをLLMに投げて要約することができればかなり時短になります。<br>文字起こしはYoutubeの標準機能についているので手動でコピーもできるんですが、結構めんどうです。<br><br>どう面倒かというと……<br>ステップ0　Youtubeの動画を開く<br>ステップ1　「もっと見る」となっているところの概要欄を開く<br>ステップ2　「文字起こしを表示」をクリック<br>ステップ3　右側に出てきた文字起こしを上から全部なぞって選択してコピー<br>ステップ4　好きなLLMに貼り付ける。<br>ステップ5　「要約して」と、プロンプトを加える。</p><p name="399c9a0a-cbb7-4177-9406-f4157bcfb43a" id="399c9a0a-cbb7-4177-9406-f4157bcfb43a">こんな感じで、意外と手順が多い。<br>それに、文字起こしをコピーするとき一括コピーができないので、動画が長くなるほど選択に時間がかかります。</p><p name="716cd7da-4710-458f-a291-45855170a82d" id="716cd7da-4710-458f-a291-45855170a82d">そこに、手元で楽しいデザインで作りたかったということと、AI駆動開発のお試しをしたかったという理由が加わり開発に至りました。</p><h2 name="7cbb36c6-90a1-4c59-86b6-ae9a3aceb54d" id="7cbb36c6-90a1-4c59-86b6-ae9a3aceb54d">作った理由をもう少し</h2><p name="e0ca85ea-cc88-48b5-a06f-34336649cdd2" id="e0ca85ea-cc88-48b5-a06f-34336649cdd2">似たような拡張機能は多数あって、実際使ってました。<br>ただ、Youtubeのアップデートか、LLM側のアップデートが来ると動かなくなることが多発していました。</p><p name="587f96a1-9228-45b8-a72f-1ea590c10f24" id="587f96a1-9228-45b8-a72f-1ea590c10f24">さらには最初は無料で、いつの間にか課金制に変わっているということがよくあって、まあ仕方ないことというか、私も個人開発者なんで事情はよく分かりますが、ちょっとペース早くない？という感じでした。</p><p name="3b5c4d88-8a27-4701-8012-5586077a6501" id="3b5c4d88-8a27-4701-8012-5586077a6501">そこで、もう手元で作れば動かなくなった時に自分で修正できるよねということで実際に役に立つものを作ろうと立ち上がりました。実際には椅子に座って開発です。</p><h2 name="87863ad8-4be3-461e-bef2-e27d91436df9" id="87863ad8-4be3-461e-bef2-e27d91436df9">Cody</h2><p name="47283646-da9e-44ab-88bb-a1214272ddbd" id="47283646-da9e-44ab-88bb-a1214272ddbd">今回の主役はCodyです。<br>Cursorの拡張機能でCodyというやつです。<br>VScodeでもいけます、というかCursorもAI開発機能搭載、ということで被っててややこしいですが。</p><p name="5cfb0d94-cad9-4b8a-930a-ecc8282acee2"><a href="https://sourcegraph.com/cody?utm_source=marketplace.visualstudio.com&amp;utm_medium=referral">https://sourcegraph.com/cody?utm_source=marketplace.visualstudio.com&amp;utm_medium=referral</a></p><p name="10425c44-4a33-4b0b-91cd-46894b233009" id="10425c44-4a33-4b0b-91cd-46894b233009">これが公式です。<br>実際、使ってみないことにはわからないってことで、使ってみました。<br><br>結構癖があって、applyがなんだか下手、とか問題もありますが、利点は9ドルで使い放題というところ。<br>Claudeのいい感じのモデルClaude3.5sonnetが使い放題です。</p><p name="a9f411bf-d00a-4bee-b1fa-94ab3e7ec64b" id="a9f411bf-d00a-4bee-b1fa-94ab3e7ec64b">他の利点はコードベースを見てくれるっていうのもあります。ただこれは、LLMによって精度が変わってきますね。<br>そもそも他のAI駆動開発支援ソフトでもコードベースのチェックはできるので、やっぱり、1番の利点は安さです。</p><p name="8f817c19-c1f0-4ab9-bb69-577f84dd094f" id="8f817c19-c1f0-4ab9-bb69-577f84dd094f">やっぱりClaude3.5sonnetがいまのところプログラミングは一番強いのかな〜と思っています。<br>ただ、2025/01/09現在、ちょっといまいちになってきているなと感じています。<br>ヘビーユーザーとしてはClaudeがコストカットにかかっていて、短文生成をしたがる傾向にあるところが結構使いづらい。（と思っています。真実は不明です。）<br>あと、Claudeはどうも変更箇所を提示しないでピンポイントにコードだけ教えてくるので、「いや流石にそれだけじゃどこを修正すればいいかわからんって」となります。<br>全コードで出して、とか言ってもなーんか制限をかけてきやすいです。</p><p name="212042f9-5424-4075-af5a-58a107496ad8" id="212042f9-5424-4075-af5a-58a107496ad8">それでもかなり精度は高いのでAI駆動開発するならsonnet使いたいなあ、という感じですね。</p><p name="1437926b-cbb4-40fa-b890-a7235e6cc4aa" id="1437926b-cbb4-40fa-b890-a7235e6cc4aa">次点でGoogleAIStudioにいって、無料で最新モデルを使うっていうのもあります。gemini 2.0 flash experimentalですね。<br>こいつがなかなかすごいです。とにかく早い。そして精度も高い。<br>こっちをモデルに選ぶのもアリかもしれません。<br>早い上にケチらないので、全コードを速攻で提示してきます。本当にコピペでいけるって感じです。省略もほとんどしてこないです。<br>これはいまだけなのかなという感じもしますが、この省略なしで長文を出してくれて、制限をかけずに使い放題ということができるなら、全然課金していいなという感じです。<br>課金したのに省略してこようとするのはナンセンスです。<br>無料の範囲で済ませられないことをやろうというのだから。</p><p name="1e81c916-ecd9-40b8-af5b-3397b0fa22fb" id="1e81c916-ecd9-40b8-af5b-3397b0fa22fb">ちょっと脱線しましたが、こんな感じで、Codyをつかって拡張機能を作ったよ、という話でした。</p><p name="898ea09a-aa35-4ca3-bfe3-3acc008e5dc9" id="898ea09a-aa35-4ca3-bfe3-3acc008e5dc9">で、次回はChrome拡張機能自体の話とリリースの流れをちゃんと話したいと思います。<br>真似して好きな拡張機能をみんなが作ってくれたら、個人開発の時代が進んで楽しくなると思います。<br>AI駆動開発で個人開発者が増えれば、世界は変わると信じています。（潜在意識に影響させたい。）</p><p name="bb7ca11a-35b3-471f-b26d-7b3b941329a8" id="bb7ca11a-35b3-471f-b26d-7b3b941329a8">今回はとにかくCody安いよって話でした。<br>次回も頑張って書きます。</p><p name="160d9ac0-ebdc-4ac2-b63f-bfc052192bfc" id="160d9ac0-ebdc-4ac2-b63f-bfc052192bfc">おわり。</p><p name="b8240697-22f1-4f4c-add1-a0dd7af5c9f2" id="b8240697-22f1-4f4c-add1-a0dd7af5c9f2">いいね！だけが頼りです。よろしくお願いします！🙏</p>
+        </div>
+        
+        <div class="meta">
+            <div class="date">公開日: 2025-01-09</div>
+            <div class="tags">
+                <span class="tag">Cody</span>
+                <span class="tag">AI駆動開発</span>
+                <span class="tag">Chrome拡張機能</span>
+                <span class="tag">開発ツール</span>
+                <span class="tag">AI</span>
+                <span class="tag">note</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="article-nav article-nav-bottom">
+        <a href="../blog.html" class="back-to-list">他の記事を読む</a>
+    </nav>
+</body>
+</html>

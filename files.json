@@ -1,6 +1,242 @@
 {
   "files": [
     {
+      "id": "ollama-cline-local-llm",
+      "path": "2025-06-05-note-ollama-cline-local-llm.html",
+      "title": "OllamaとClineを使用したローカルLLM開発環境の完全ガイド",
+      "description": "OllamaとClineを使用したローカルLLM開発環境の完全ガイドについて詳しく解説。実践的な活用方法やコツを紹介します。",
+      "tags": [
+        "note",
+        "Ollama",
+        "Cline",
+        "ローカルLLM",
+        "開発環境",
+        "AI"
+      ],
+      "created": "2025-06-05"
+    },
+    {
+      "id": "chatgpt-simple-explanation",
+      "path": "2024-07-10-note-chatgpt-simple-explanation.html",
+      "title": "ChatGPTめっちゃざっくり説明しよう🦄",
+      "description": "ChatGPTめっちゃざっくり説明しよう🦄について詳しく解説。実践的な活用方法やコツを紹介します。",
+      "tags": [
+        "note",
+        "ChatGPT",
+        "AI",
+        "解説",
+        "基礎"
+      ],
+      "created": "2024-07-10"
+    },
+    {
+      "id": "marp-ai-presentation",
+      "path": "2024-09-01-note-marp-ai-presentation.html",
+      "title": "Marp｜AIとの組み合わせで再注目？",
+      "description": "Marp｜AIとの組み合わせで再注目？について詳しく解説。実践的な活用方法やコツを紹介します。",
+      "tags": [
+        "note",
+        "YouTube",
+        "AI",
+        "要約",
+        "動画"
+      ],
+      "created": "2024-09-01"
+    },
+    {
+      "id": "mac-text-shortcuts",
+      "path": "2024-09-01-note-mac-text-shortcuts.html",
+      "title": "Macのテキスト入力ショートカットまとめ⌨️✨",
+      "description": "Macのテキスト入力ショートカットまとめ⌨️✨について詳しく解説。実践的な活用方法やコツを紹介します。",
+      "tags": [
+        "note",
+        "Mac",
+        "ショートカット",
+        "テキスト入力",
+        "効率化"
+      ],
+      "created": "2024-09-01"
+    },
+    {
+      "id": "dark-pattern-book-memo",
+      "path": "2024-08-01-note-dark-pattern-book-memo.html",
+      "title": "本「ダークパターン 人を欺くデザインの手口と対策」のメモ",
+      "description": "本「ダークパターン 人を欺くデザインの手口と対策」のメモの詳細記事です。実践的な知見と具体的な手法について解説します。",
+      "tags": [
+        "note"
+      ],
+      "created": "2024-08-01"
+    },
+    {
+      "id": "manana-principle-memo",
+      "path": "2024-06-11-note-manana-principle-memo.html",
+      "title": "本「仕事に追われない仕事術 マニャーナの法則 完全版」メモ",
+      "description": "本「仕事に追われない仕事術 マニャーナの法則 完全版」メモの詳細記事です。実践的な知見と具体的な手法について解説します。",
+      "tags": [
+        "note"
+      ],
+      "created": "2024-06-11"
+    },
+    {
+      "id": "chatgpt-notion-series-0",
+      "path": "2024-06-03-note-chatgpt-notion-series-0.html",
+      "title": "ChatGPTとNotionシリーズ_0",
+      "description": "ChatGPTとNotionシリーズ_0の詳細記事です。実践的な知見と具体的な手法について解説します。",
+      "tags": [
+        "note"
+      ],
+      "created": "2024-06-03"
+    },
+    {
+      "id": "ai-notion-workflow",
+      "path": "2024-06-03-note-ai-notion-workflow.html",
+      "title": "🤖📚AIとNotionはセットでつかう？_01",
+      "description": "AIツールとNotionを組み合わせた効率的なワークフローの構築方法を解説。ChatGPTなどのAIツールとNotionの連携で情報管理と生産性を向上させるテクニックを紹介します。",
+      "tags": [
+        "note",
+        "AI",
+        "Notion",
+        "ワークフロー",
+        "効率化",
+        "ChatGPT",
+        "生産性向上"
+      ],
+      "created": "2024-06-03"
+    },
+    {
+      "id": "cody-ai-chrome-extension-development",
+      "path": "2025-01-09-note-cody-ai-chrome-extension-development.html",
+      "title": "【Cody】AI駆動開発でChrome拡張機能をつくった話。【YoutubeTranscriptCopier】",
+      "description": "AI駆動開発ツールCodyを使ってChrome拡張機能（YoutubeTranscriptCopier）を開発した実体験レポート。Codyの使い方、開発プロセス、メリット・デメリットを詳しく解説します。",
+      "tags": [
+        "note",
+        "Cody",
+        "AI駆動開発",
+        "Chrome拡張機能",
+        "開発ツール",
+        "AI",
+        "プログラミング"
+      ],
+      "created": "2025-01-09"
+    },
+    {
+      "id": "ai-driven-development-summary",
+      "path": "2024-12-09-note-ai-driven-development-summary.html",
+      "title": "AI駆動開発と呼ぶらしい、開発スタイルまとめてみた",
+      "description": "AI駆動開発（AI-Driven Development）の概念と実践方法を詳しく解説。従来の開発スタイルとの違い、具体的なツールやワークフローについてまとめます。",
+      "tags": [
+        "note",
+        "AI駆動開発",
+        "開発手法",
+        "AI",
+        "プログラミング",
+        "生産性向上"
+      ],
+      "created": "2024-12-09"
+    },
+    {
+      "id": "youtube-summary-tools",
+      "path": "2024-07-30-note-youtube-summary-tools.html",
+      "title": "YouTube要約ツールの決定版 - 効率的な動画要約の方法",
+      "description": "YouTubeの要約に最適なAIツール「Video Summarizer」の使い方を詳しく解説。無料版でも使える高精度要約方法から文字起こし活用まで、動画学習を効率化するテクニックを紹介します。",
+      "tags": [
+        "note",
+        "AI活用",
+        "YouTube",
+        "要約",
+        "Video Summarizer",
+        "ChatGPT",
+        "文字起こし",
+        "学習効率化"
+      ],
+      "created": "2024-07-30"
+    },
+    {
+      "id": "dark-pattern-book-memo",
+      "path": "2024-08-01-note-dark-pattern-book-memo.html",
+      "title": "読書メモ：ダークパターン - 人を欺くデザインの手口と対策",
+      "description": "ハリー・ブリニル著『ダークパターン 人を欺くデザインの手口と対策』の読書メモ。ウェブデザインやUIで使われる悪意あるデザインパターンの実例と対策について解説します。",
+      "tags": [
+        "note",
+        "読書メモ",
+        "ダークパターン",
+        "UXデザイン",
+        "UIデザイン",
+        "ユーザビリティ",
+        "デザイン倫理",
+        "ハリー・ブリニル"
+      ],
+      "created": "2024-08-01"
+    },
+    {
+      "id": "mac-text-input-shortcuts",
+      "path": "2024-09-01-note-mac-text-input-shortcuts.html",
+      "title": "Macのテキスト入力ショートカット完全ガイド - 作業効率化の必須テクニック",
+      "description": "Macでのテキスト入力を劇的に効率化するショートカットキーの完全ガイド。カーソル移動、テキスト選択、編集操作など、実用的なキーボードショートカットを体系的に解説します。",
+      "tags": [
+        "note",
+        "Mac",
+        "ショートカット",
+        "キーボード",
+        "テキスト入力",
+        "効率化",
+        "作業効率",
+        "macOS"
+      ],
+      "created": "2024-09-01"
+    },
+    {
+      "id": "marp-ai-presentation",
+      "path": "2024-09-01-note-marp-ai-presentation.html",
+      "title": "Marp｜AIとの組み合わせで再注目のプレゼンテーション作成ツール",
+      "description": "MarpとAIを組み合わせた効率的なプレゼンテーション作成方法を解説。MarkdownからスライドをAI生成する手順から、VS Codeでの実践的な使い方まで、新時代のスライド作成術を紹介します。",
+      "tags": [
+        "note",
+        "Marp",
+        "AI",
+        "プレゼンテーション",
+        "スライド作成",
+        "Markdown",
+        "VS Code",
+        "効率化"
+      ],
+      "created": "2024-09-01"
+    },
+    {
+      "id": "ai-reflection-experience",
+      "path": "2024-07-11-note-ai-reflection-experience.html",
+      "title": "現時点での生成AIを振り返ってみる - 個人的体験と考察",
+      "description": "ChatGPT登場から現在までの生成AI体験を個人的に振り返る。インターネット以来の衝撃、学習方針の転換、Notionとの組み合わせ、そして日本語と英語の特性について考察します。",
+      "tags": [
+        "note",
+        "生成AI",
+        "ChatGPT",
+        "AI体験",
+        "振り返り",
+        "Notion",
+        "個人的考察",
+        "言語文化"
+      ],
+      "created": "2024-07-11"
+    },
+    {
+      "id": "language-context-theory",
+      "path": "2024-07-08-note-language-context-theory.html",
+      "title": "英語はローコンテキスト、日本語はハイコンテキスト - 抽象概念への特化戦略",
+      "description": "英語のローコンテキスト文化と日本語のハイコンテキスト文化の違いを分析。日本語の抽象概念処理に長けた特性を活かす戦略について考察します。",
+      "tags": [
+        "note",
+        "ローコンテキスト",
+        "ハイコンテキスト",
+        "英語",
+        "日本語",
+        "言語文化",
+        "抽象概念",
+        "コミュニケーション"
+      ],
+      "created": "2024-07-08"
+    },
+    {
       "id": "notion-subscription-management-template",
       "path": "2024-03-28-notion-subscription-management-template.html",
       "title": "Notion「かんたんサブスク管理」無料配布！",
