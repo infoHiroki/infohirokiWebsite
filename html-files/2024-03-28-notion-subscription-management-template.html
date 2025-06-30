@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion「かんたんサブスク管理」無料配布！ | info.HirokiTakamura</title>
+    <meta name="description" content="サブスクリプション管理が複雑になりがちな現代において、Notionを使ったシンプルで効果的なサブスク管理テンプレートを無料で提供します。支払い日、料金、利用状況を一元管理できる実践的なソリューションです。">
+    <meta name="keywords" content="Notion, サブスク管理, テンプレート, 無料配布, データベース, 家計管理, 効率化">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://infohiroki.com/html-files/2024-03-28-notion-subscription-management-template.html">
+    <meta property="og:title" content="Notion「かんたんサブスク管理」無料配布！">
+    <meta property="og:description" content="サブスクリプション管理が複雑になりがちな現代において、Notionを使ったシンプルで効果的なサブスク管理テンプレートを無料で提供します。">
+    <meta property="og:image" content="https://infohiroki.com/images/note/notion-subscription-template-cover.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://infohiroki.com/html-files/2024-03-28-notion-subscription-management-template.html">
+    <meta property="twitter:title" content="Notion「かんたんサブスク管理」無料配布！">
+    <meta property="twitter:description" content="サブスクリプション管理が複雑になりがちな現代において、Notionを使ったシンプルで効果的なサブスク管理テンプレートを無料で提供します。">
+    <meta property="twitter:image" content="https://infohiroki.com/images/note/notion-subscription-template-cover.png">
+    
+    <link rel="canonical" href="https://infohiroki.com/html-files/2024-03-28-notion-subscription-management-template.html">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        :root {
+            --accent-color: #ff7262;
+            --accent-light: rgba(255, 114, 98, 0.1);
+            --accent-shadow: rgba(255, 114, 98, 0.3);
+        }
+        
+        .article-header {
+            background: linear-gradient(135deg, var(--accent-light) 0%, rgba(255, 255, 255, 0.8) 100%);
+            border: 2px solid var(--accent-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .article-header h1 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-size: 2.2rem;
+        }
+        
+        .article-meta {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        
+        .download-section {
+            background: var(--accent-light);
+            border: 2px solid var(--accent-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .download-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .template-link {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .template-link:hover {
+            background: #e55b4b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--accent-shadow);
+        }
+        
+        .feature-list {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .feature-list h4 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .feature-list li:before {
+            content: "✅ ";
+            margin-right: 0.5rem;
+        }
+        
+        .steps-section {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .step {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .step-number {
+            background: var(--accent-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .related-articles {
+            background: var(--accent-light);
+            border: 2px solid var(--accent-color);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .related-articles h3 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .related-links {
+            display: grid;
+            gap: 15px;
+        }
+
+        .related-link {
+            display: block;
+            padding: 15px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .related-link:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 2px 8px var(--accent-shadow);
+            transform: translateY(-2px);
+        }
+
+        .related-link h4 {
+            color: var(--accent-color);
+            margin: 0 0 8px 0;
+            font-size: 1.1rem;
+        }
+
+        .related-link p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <nav class="article-nav article-nav-top">
+        <a href="../blog.html" class="back-link">← ブログ一覧</a>
+    </nav>
+
+    <main class="container">
+        <article>
+            <div class="article-header">
+                <h1>Notion「かんたんサブスク管理」無料配布！</h1>
+                <div class="article-meta">
+                    <time datetime="2024-03-28">2024年3月28日</time> | 
+                    <span class="category">Notion</span> | 
+                    <span class="category">生産性</span>
+                </div>
+                <p>サブスクリプション管理が複雑になりがちな現代において、Notionを使ったシンプルで効果的なサブスク管理テンプレートを無料で提供します。</p>
+            </div>
+
+            <section>
+                <h2>サブスク管理の課題</h2>
+                <p>サブスクリプション管理は、多くの人にとって問題のあるタスクです。</p>
+                
+                <p>毎月支払いがあると、どのサービスがいくらかわからなくなったり、クレジットカードの請求書が混乱したりすることがよくあります。</p>
+                
+                <p>今回はNotionのサブスクリプション管理テンプレートが使いやすかったので共有します。</p>
+            </section>
+
+            <section class="feature-list">
+                <h4>テンプレートの機能</h4>
+                <p>このテンプレートには、サブスクリプションの種類、支払い日、料金などの情報を入力するためのフィールドがあります。</p>
+                
+                <p>また、サービスの利用状況を追跡するためのチェックボックスもあります。これにより、毎月の支払いとサービスの使用状況を簡単に追跡できます。</p>
+                
+                <ul>
+                    <li>サブスクリプションの種類管理</li>
+                    <li>支払い日の自動リマインダー</li>
+                    <li>月額・年額料金の一覧表示</li>
+                    <li>利用状況のチェック機能</li>
+                    <li>年間支払い総額の自動計算</li>
+                    <li>サービス評価・満足度記録</li>
+                </ul>
+            </section>
+
+            <div class="download-section">
+                <h3>テンプレートの入手方法</h3>
+                <p>以下のリンクからテンプレートをダウンロードできます。<br>
+                もちろん、先にNotionアカウントを作っておいてください。</p>
+                
+                <a href="https://familiar-porter-d3d.notion.site/e295c88f6553416fbc1f419f1d9a9940?v=b515b67c2b1348888b484d598099134d&pvs=4" target="_blank" class="template-link">
+                    テンプレートを入手する
+                </a>
+            </div>
+
+            <div class="steps-section">
+                <h3>利用手順</h3>
+                
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div>
+                        <strong>上記リンクをクリック</strong><br>
+                        Notionのテンプレートページにアクセスします
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <strong>右上の「複製」をクリック</strong><br>
+                        これで自分のNotionアカウントにテンプレートをコピーできます
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <strong>自分の情報を入力</strong><br>
+                        現在利用中のサブスクリプションサービスを登録していきます
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <h2>活用のポイント</h2>
+                <p>使い方は自由なので、ぜひご活用ください。</p>
+                
+                <p>このテンプレートがあなたのサブスクリプション管理に役に立てば嬉しいです。</p>
+                
+                <h3>推奨活用方法</h3>
+                <ul>
+                    <li><strong>月末チェック：</strong> 毎月末に利用状況を見直し、不要なサービスは解約</li>
+                    <li><strong>年間予算管理：</strong> 年間総額を把握して家計予算に組み込む</li>
+                    <li><strong>更新日リマインダー：</strong> 料金改定や契約更新のタイミングを事前に把握</li>
+                    <li><strong>比較検討：</strong> 類似サービス間での費用対効果を比較</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>お問い合わせ</h2>
+                <p>もしご質問やご意見がありましたら、お気軽にお問い合わせください。</p>
+                <p><strong>連絡先：</strong> <a href="mailto:info.hirokitakamura@gmail.com">info.hirokitakamura@gmail.com</a></p>
+            </section>
+
+            <div class="related-articles">
+                <h3>関連記事</h3>
+                <div class="related-links">
+                    <a href="2024-06-04-notion-explanation-basic.html" class="related-link">
+                        <h4>Notionってなんだ？</h4>
+                        <p>Notionの基本概要と機能を分かりやすく解説。オールインワンツールとしての活用方法</p>
+                    </a>
+                    <a href="2024-06-05-notion-shortcuts-guide.html" class="related-link">
+                        <h4>Notionまずはショートカット🚀</h4>
+                        <p>Notionの効率的なショートカット操作ガイド。作業効率を大幅アップする必須ショートカット</p>
+                    </a>
+                    <a href="2024-03-27-notion-save-to-notion-extension.html" class="related-link">
+                        <h4>Save to Notion拡張機能</h4>
+                        <p>ウェブページを瞬時にNotionに保存できるChrome拡張機能の使い方</p>
+                    </a>
+                    <a href="2024-11-20-chatgpt-ai-tools-4selection.html" class="related-link">
+                        <h4>実務に生き残ったAIツール4選</h4>
+                        <p>ChatGPT登場から2年経過後も実務で活用し続けているAIツールの特徴と使い分け</p>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <nav class="article-nav article-nav-bottom">
+        <a href="../blog.html" class="back-to-list">他の記事を読む</a>
+    </nav>
+</body>
+</html>

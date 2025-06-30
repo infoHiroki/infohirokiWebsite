@@ -1,6 +1,74 @@
 {
   "files": [
     {
+      "id": "notion-subscription-management-template",
+      "path": "2024-03-28-notion-subscription-management-template.html",
+      "title": "Notion「かんたんサブスク管理」無料配布！",
+      "description": "サブスクリプション管理が複雑になりがちな現代において、Notionを使ったシンプルで効果的なサブスク管理テンプレートを無料で提供します。支払い日、料金、利用状況を一元管理できる実践的なソリューションです。",
+      "tags": [
+        "note",
+        "Notion",
+        "サブスク管理",
+        "テンプレート",
+        "無料配布",
+        "データベース",
+        "家計管理",
+        "効率化"
+      ],
+      "created": "2024-03-28"
+    },
+    {
+      "id": "book-reflection-technique-memo",
+      "path": "2024-05-17-book-reflection-technique-memo.html",
+      "title": "本『リフレクション(REFLECTION) 自分とチームの成長を加速させる内省の技術』メモ",
+      "description": "熊平美香著『リフレクション』の読書メモ。意見・経験・感情・価値観のフレームワークを使った内省技術で自己とチームの成長を加速させる方法を解説します。メタ認知力向上と客観的思考の実践的アプローチ。",
+      "tags": [
+        "note",
+        "読書",
+        "リフレクション",
+        "内省",
+        "メタ認知",
+        "自己成長",
+        "チーム成長",
+        "熊平美香"
+      ],
+      "created": "2024-05-17"
+    },
+    {
+      "id": "book-manana-principle-memo",
+      "path": "2024-06-15-book-manana-principle-memo.html",
+      "title": "本「仕事に追われない仕事術 マニャーナの法則 完全版」メモ",
+      "description": "マーク・フォースター著『マニャーナの法則』の読書メモ。翌日に回すことで優先順位を見直す技術、クローズリストとオープンリストの使い分け、真の仕事と忙しいだけの仕事の区別など、効率的な時間管理術を解説。",
+      "tags": [
+        "note",
+        "読書",
+        "マニャーナの法則",
+        "時間管理",
+        "仕事術",
+        "生産性",
+        "タスク管理",
+        "効率化"
+      ],
+      "created": "2024-06-15"
+    },
+    {
+      "id": "chatgpt-notion-history-extension",
+      "path": "2024-06-13-chatgpt-notion-history-extension.html",
+      "title": "ChatGPTの履歴をNotionに送れる！拡張機能🚀",
+      "description": "ChatGPTとの会話を直接Notionに保存できるChrome拡張機能の使い方を詳しく解説。数秒で完全なChatGPTの会話を保存し、ナレッジベースとして活用する方法をご紹介します。",
+      "tags": [
+        "note",
+        "ChatGPT",
+        "Notion",
+        "Chrome拡張機能",
+        "AI",
+        "会話履歴",
+        "自動保存",
+        "ナレッジベース"
+      ],
+      "created": "2024-06-13"
+    },
+    {
       "id": "book-world-class-engineer-thinking-memo",
       "path": "2024-05-17-book-world-class-engineer-thinking-memo.html",
       "title": "本『世界一流エンジニアの思考法』メモ",
@@ -704,6 +772,40 @@
         "生産性向上"
       ],
       "created": "2024-11-20"
+    },
+    {
+      "id": "notion-explanation-basic",
+      "path": "2024-06-04-notion-explanation-basic.html",
+      "title": "Notionってなんだ？_02",
+      "description": "Notionの基本概要と機能を分かりやすく解説。ドキュメント、データベース、ウェブサイト、ナレッジベース、プロジェクト管理など、オールインワンツールNotionの活用方法を紹介します。",
+      "tags": [
+        "note",
+        "Notion",
+        "基本",
+        "オールインワン",
+        "ドキュメント",
+        "データベース",
+        "プロジェクト管理",
+        "ナレッジベース"
+      ],
+      "created": "2024-06-04"
+    },
+    {
+      "id": "notion-shortcuts-guide",
+      "path": "2024-06-05-notion-shortcuts-guide.html",
+      "title": "Notionまずはショートカット🚀_03",
+      "description": "Notionの効率的なショートカット操作ガイド。スラッシュコマンド、Ctrl+Shiftパターン、マークダウン記法など、作業効率を大幅アップする必須ショートカットを完全解説。",
+      "tags": [
+        "note",
+        "Notion",
+        "ショートカット",
+        "効率化",
+        "スラッシュコマンド",
+        "マークダウン",
+        "キーボード操作",
+        "作業効率"
+      ],
+      "created": "2024-06-05"
     }
   ]
 }
