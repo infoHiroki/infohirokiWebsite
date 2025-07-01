@@ -3,9 +3,9 @@
 XMLファイルに61記事あり、現在8記事作成済み。残り53記事の作成が必要です。
 
 ## 進行状況
-- 作成済み：8記事
-- 残り：53記事
-- 進捗率：13%
+- 作成済み：11記事
+- 残り：50記事
+- 進捗率：18%
 
 ## 優先度別タスクリスト
 
@@ -133,3 +133,26 @@ ls /Users/hirokitakamura/Documents/Dev/infohirokiWebsite/images/note/
 6. ✅ 2024-05-19-prompt-design-guide.html
 7. ✅ 2024-05-20-programming-terminology-collection.html
 8. ✅ 2024-05-20-gas-terminology-collection.html
+
+### 新規作成記事（2025年7月作成）
+9. ✅ 2025-06-26-gemini-cli-vs-claude-code-review.html
+   - タイトル: 「Gemini CLI」がきた。Claude CodeをMaxプランで毎日使ってる人の感想
+   - カテゴリ: AI開発ツール比較・レビュー
+   - 作成日: 2025年7月1日
+   
+10. ✅ 2025-06-07-git-github-complete-cheatsheet.html
+    - タイトル: Git & GitHub 完全チートシート
+    - カテゴリ: 開発ツール・リファレンス
+    - 作成日: 2025年7月1日
+
+11. ✅ 2025-06-06-cursor-1-0-new-features.html
+    - タイトル: 🎉 Cursor 1.0 の主要新機能
+    - カテゴリ: AI開発ツール・新機能解説
+    - 作成日: 2025年7月1日
+    - 特徴: 技術解説+創作小説の組み合わせ
+
+12. ✅ 2024-12-09-ai-driven-development-summary.html
+    - タイトル: AI駆動開発と呼ぶらしい、開発スタイルまとめてみた
+    - カテゴリ: AI開発手法・ワークフロー解説
+    - 作成日: 2025年7月1日
+    - 特徴: Cursor、Claude、Dify等のツール使い分け戦略

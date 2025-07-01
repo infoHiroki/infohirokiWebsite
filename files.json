@@ -1,6 +1,109 @@
 {
   "files": [
     {
+      "id": "cursor-1-0-new-features",
+      "path": "2025-06-06-cursor-1-0-new-features.html",
+      "title": "🎉 Cursor 1.0 の主要新機能",
+      "description": "Cursor 1.0の新機能を詳しく解説。BugBot、Background Agent、Jupyter Notebook対応、Memories機能、MCP統合など開発者向けの革新的アップデート。",
+      "tags": [
+        "note",
+        "Cursor",
+        "1.0",
+        "新機能",
+        "BugBot",
+        "AI Code Editor",
+        "開発ツール",
+        "コードレビュー"
+      ],
+      "created": "2025-06-06"
+    },
+    {
+      "id": "git-github-complete-cheatsheet",
+      "path": "2025-06-07-git-github-complete-cheatsheet.html",
+      "title": "Git & GitHub 完全チートシート",
+      "description": "Git・GitHubの完全チートシート。基本コマンドからブランチ操作、トラブルシューティング、GitHub特有機能まで7000文字超の包括的リファレンス。",
+      "tags": [
+        "note",
+        "Git",
+        "GitHub",
+        "チートシート",
+        "バージョン管理",
+        "コマンド",
+        "リファレンス",
+        "開発ツール"
+      ],
+      "created": "2025-06-07"
+    },
+    {
+      "id": "gemini-cli-vs-claude-code-review",
+      "path": "2025-06-26-gemini-cli-vs-claude-code-review.html",
+      "title": "「Gemini CLI」がきた。Claude CodeをMaxプランで毎日使ってる人の感想",
+      "description": "GoogleのGemini CLIとClaude Codeを実際に比較レビュー。Claude Maxプランユーザーの視点から両ツールの特徴、速度、使いやすさを詳しく解説します。",
+      "tags": [
+        "note",
+        "Gemini CLI",
+        "Claude Code",
+        "AI開発ツール",
+        "比較レビュー",
+        "Google",
+        "Anthropic",
+        "開発環境"
+      ],
+      "created": "2025-06-26"
+    },
+    {
+      "id": "google-gemini-cli-report",
+      "path": "2025-07-01-google-gemini-cli-report.html",
+      "title": "【Gemini CLI】Googleが開発したターミナルで使えるAIエージェントをClaude Codeと比較",
+      "description": "GoogleのGemini CLIをClaude Codeと比較レビュー。機能・性能・今後の展望を詳細分析。",
+      "tags": [
+        "Gemini CLI",
+        "Google",
+        "Claude Code",
+        "AIエージェント",
+        "ターミナル",
+        "CLI",
+        "AI開発",
+        "比較レビュー",
+        "AI"
+      ],
+      "created": "2025-07-01"
+    },
+    {
+      "id": "ai-notion-tasker-chrome-extension",
+      "path": "2024-10-14-ai-notion-tasker-chrome-extension.html",
+      "title": "AIでNotionTaskerというChrome拡張機能を作ってみた話。",
+      "description": "Cursor ProとClaude 3.5 Sonnetを使ってNotionTaskerというChrome拡張機能を開発した実体験。Alt+NでNotionに簡単にページを追加できるツールの開発プロセスを詳しく解説。",
+      "tags": [
+        "note",
+        "Chrome拡張機能",
+        "AI開発",
+        "Cursor",
+        "Claude",
+        "Notion",
+        "プログラミング",
+        "開発ツール"
+      ],
+      "created": "2024-10-14"
+    },
+    {
+      "id": "chatgpt-survived-ai-tools",
+      "path": "2024-11-20-chatgpt-survived-ai-tools.html",
+      "title": "ChatGPTから2年以上。実務に生き残ったAIツール4選。",
+      "description": "ChatGPT登場から2年経った今、実務で本当に使い続けているAIツール4選をご紹介。Claude、Genspark、Midjourney、Gammaの実用性を検証。",
+      "tags": [
+        "note",
+        "ChatGPT",
+        "Claude",
+        "AIツール",
+        "実務",
+        "生産性",
+        "AI検索",
+        "画像生成"
+      ],
+      "created": "2024-11-20"
+    },
+    {
       "id": "ollama-cline-local-llm",
       "path": "2025-06-05-note-ollama-cline-local-llm.html",
       "title": "OllamaとClineを使用したローカルLLM開発環境の完全ガイド",
@@ -121,7 +224,7 @@
     },
     {
       "id": "ai-driven-development-summary",
-      "path": "2024-12-09-note-ai-driven-development-summary.html",
+      "path": "2024-12-09-ai-driven-development-summary.html",
       "title": "AI駆動開発と呼ぶらしい、開発スタイルまとめてみた",
       "description": "AI駆動開発（AI-Driven Development）の概念と実践方法を詳しく解説。従来の開発スタイルとの違い、具体的なツールやワークフローについてまとめます。",
       "tags": [
