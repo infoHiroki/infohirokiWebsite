@@ -1042,6 +1042,21 @@
         "作業効率"
       ],
       "created": "2024-06-05"
+    },
+    {
+      "id": "gemini-cli-report",
+      "path": "2025-07-01-gemini-cli-report.html",
+      "title": "Google Gemini CLI 詳細レポート",
+      "description": "Google Gemini CLIの詳細分析レポート。オープンソースで無料のAIコーディングツールの特徴、競合比較、技術評価を含む包括的な解説。",
+      "tags": [
+        "AI",
+        "Gemini",
+        "CLI",
+        "コーディングツール",
+        "オープンソース",
+        "Google"
+      ],
+      "created": "2025-07-01"
     }
   ]
 }
