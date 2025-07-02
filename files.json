@@ -105,7 +105,7 @@
     },
     {
       "id": "ollama-cline-local-llm",
-      "path": "2025-06-05-note-ollama-cline-local-llm.html",
+      "path": "2025-06-05-ollama-cline-local-llm.html",
       "title": "OllamaとClineを使用したローカルLLM開発環境の完全ガイド",
       "description": "OllamaとClineを使用したローカルLLM開発環境の完全ガイドについて詳しく解説。実践的な活用方法やコツを紹介します。",
       "tags": [
@@ -208,7 +208,7 @@
     },
     {
       "id": "cody-ai-chrome-extension-development",
-      "path": "2025-01-09-note-cody-ai-chrome-extension-development.html",
+      "path": "2025-01-09-cody-ai-chrome-extension-development.html",
       "title": "【Cody】AI駆動開発でChrome拡張機能をつくった話。【YoutubeTranscriptCopier】",
       "description": "AI駆動開発ツールCodyを使ってChrome拡張機能（YoutubeTranscriptCopier）を開発した実体験レポート。Codyの使い方、開発プロセス、メリット・デメリットを詳しく解説します。",
       "tags": [
@@ -236,6 +236,23 @@
         "生産性向上"
       ],
       "created": "2024-12-09"
+    },
+    {
+      "id": "prompt-storage-problem",
+      "path": "2025-02-20-prompt-storage-problem.html",
+      "title": "結局、プロンプトの置き場をどこにするかって話。",
+      "description": "プロンプト管理の最適解を探る。GPTs、Claude Projects、Gemini Gemsから専用ツール、Difyまで、プロンプト置き場戦略の実践的考察。",
+      "tags": [
+        "note",
+        "プロンプト管理",
+        "GPTs",
+        "Claude Projects",
+        "Notion",
+        "Dify",
+        "AI活用",
+        "効率化"
+      ],
+      "created": "2025-02-20"
     },
     {
       "id": "youtube-summary-tools",
