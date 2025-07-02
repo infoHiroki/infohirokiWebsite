@@ -1,81 +1,132 @@
 # 残りのnote記事作成タスク
 
-XMLファイルに61記事あり、現在8記事作成済み。残り53記事の作成が必要です。
+XMLファイルに61記事あり、現在23記事作成済み。残り38記事の作成が必要です。
 
 ## 進行状況
-- 作成済み：11記事
-- 残り：50記事
-- 進捗率：18%
+- **作成済み**：23記事
+- **残り**：38記事
+- **進捗率**：37.7%
 
-## 優先度別タスクリスト
+## 全記事チェックリスト（XML順）
 
-### 高優先度（最新記事・AI関連）
-1. **ChatGPTから2年以上。実務に生き残ったAIツール4選**
-   - 公開日：2024-11-20
-   - カテゴリ：AI・ツール活用
+[x] 記事01: Notion Web ClipperよりSave to Notionの方がおすすめだよ〜 → `2024-03-27-notion-save-to-notion-extension.html`
+[ ] 記事02: Notion「かんたんサブスク管理」無料配布！
+[x] 記事03: ChatGPTでリスキリング → `2024-03-29-chatgpt-reskilling-guide.html`
+[ ] 記事04: 本「自己肯定感を上げる OUTPUT読書術」のメモ
+[ ] 記事05: 本　『世界一流エンジニアの思考法』　メモ
+[ ] 記事06: 本　『リフレクション(REFLECTION) 自分とチームの成長を加速させる内省の技術』メモ
+[x] 記事07: プロンプトデザインまとめ。たまに見るといい。 → `2024-05-19-prompt-design-guide.html`
+[ ] 記事08: PCでプロンプトを音声入力するときはOSの音声入力一択だなと感じてます。拡張機能とかはアップデートごとに使えなくなるし、そもそも複数のLLMをまたがって使いたいのでOSの音声入力が使いやすい。喋って入力したいけど、喋ってもらいたくはない（出力は目で読む）という人は多いと思います。
+[x] 記事09: 楽しいプログラミング用語集 → `2024-05-20-programming-terminology-collection.html`
+[x] 記事10: 楽しいGAS用語集 → `2024-05-20-gas-terminology-collection.html`
+[ ] 記事11: 記事 11
+[x] 記事12: ChatGPTとNotionシリーズ_0 → `2024-06-03-note-chatgpt-notion-series-0.html`
+[x] 記事13: 🤖📚AIとNotionはセットでつかう？_01 → `2024-06-03-note-ai-notion-workflow.html`
+[x] 記事14: Notionってなんだ？_02 → `2024-06-04-notion-explanation-basic.html`
+[x] 記事15: Notionまずはショートカット🚀_03 → `2024-06-05-notion-shortcuts-guide.html`
+[ ] 記事16: Notionでデータベースをつくろうよ📖_04
+[ ] 記事17: Save to Notionは必須だよ!!_05
+[ ] 記事18: 本　世界一流エンジニアの思考法📕メモv2
+[ ] 記事19: 本　仕事に追われない仕事術 マニャーナの法則 完全版　メモv1
+[ ] 記事20: ChatGPTの履歴をNotionに送れる！ 拡張機能🚀_06
+[ ] 記事21: ChatGPTにスクリーンショットなげまくるといいよ📸
+[ ] 記事22: MidjourneyのプロンプトをDALL·E 3でつかってみた🍲
+[ ] 記事23: GAIとおしゃべり。音声入力いろいろ🦘_07
+[x] 記事24: AIとかNotionのだらだら話す → `2024-06-25-ai-notion-casual-talk.html`
+[ ] 記事25: Notionサイトって新機能もきたし、昔の動画を復活させてみよう🦘
+[ ] 記事26: 英語はローコンテキスト。日本語はハイコンテキスト。抽象概念を扱うのに長けているならもういっそのことそっちに振った方がいいのかもしれない。ね〜
+[ ] 記事27: ChatGPTめっちゃざっくり説明しよう🦄
+[x] 記事28: 現時点での生成AIを振り返ってみる → `2024-07-11-note-ai-reflection-experience.html`
+[ ] 記事29: https://note.com/info_h_takamura/
+[ ] 記事30: Youtubeの要約はこれ一択かな〜
+[ ] 記事31: 本　【ダークパターン 人を欺くデザインの手口と対策】のメモ
+[ ] 記事32: Macのテキスト入力ショートカットまとめ⌨️✨
+[ ] 記事33: Marp｜AIとの組み合わせで再注目？
+[ ] 記事34: "おしゃべり"が武器になる時代　〜AI音声入力で人生が変わった話〜
+[x] 記事35: AIでNotionTaskerというChrome拡張機能を作ってみた話。 → `2024-10-14-ai-notion-tasker-chrome-extension.html`
+[ ] 記事36: NotionとDifyとスプレッドシートとWebアプリとデスクトップアプリと……独りごちる
+[ ] 記事37: AIでNotion Taskerをつくってみた話。マニュアル的にかいていく。
+[x] 記事38: ChatGPTから2年以上。実務に生き残ったAIツール4選。 → `2024-11-20-chatgpt-ai-tools-4selection.html`
+[ ] 記事39: AI関連企業リストを出してみた。意外とこうやって眺めたことがなかったな。
+[x] 記事40: AI駆動開発と呼ぶらしい、開発スタイルまとめてみた。 → `2024-12-09-ai-driven-development-summary.html`
+[x] 記事41: 【Cody】AI駆動開発でChrome拡張機能をつくった話。【YoutubeTranscriptCopier】 → `2025-01-09-cody-ai-chrome-extension-development.html`
+[x] 記事42: 【AI駆動開発】YouTube字幕コピペ拡張機能で、リサーチと学習がマジで爆速になるって話。 → `2025-01-21-youtube-transcript-copier-ai-development.html`
+[ ] 記事43: Notion系Chrome拡張機能最強ツール【Save to Notion】に改めてフォーカスしてみる。
+[ ] 記事44: 実務に生き残った【Chrome拡張機能】3選
+[ ] 記事45: リサーチはとにかくスピード重視。AIに任せる部分と自分でやる部分。
+[ ] 記事46: Notion　データベース二つですべてを管理しよ！
+[ ] 記事47: LINE公式アカウントのリッチメニューをデザインしてみよう
+[ ] 記事48: 【パワポいらない】youtube文字起こしからスライドを1分で。【Gamma】
+[x] 記事49: ChatGPTから2年以上。実務に生き残ったAIツール4選？ 2025/02/20ver → `2025-02-20-chatgpt-survived-ai-tools-4-selections-2025.html`
+[x] 記事50: 結局、プロンプトの置き場をどこにするかって話。 → `2025-02-20-prompt-storage-problem.html`
+[ ] 記事51: Claude3.7Sonnetの限界を見てしまいました。
+[ ] 記事52: ChatGPTから2年以上。実務に生き残ったAIツール4選 2025/04/27ver
+[ ] 記事53: 日報を書こう。
+[ ] 記事54: youtubeの文字起こしの先頭にプロンプトをつけてコピーするChrome拡張機能を作りました。
+[x] 記事55: OllamaとClineを使用したローカルLLM開発環境の完全ガイド → `2025-06-05-ollama-cline-local-llm.html`
+[ ] 記事56: ブコウスキー風小説。AIモード世界に生きるSEO屋
+[x] 記事57: 🎉 Cursor 1.0 の主要新機能 → `2025-06-06-cursor-1-0-new-features.html`
+[ ] 記事58: バージョンの向こう側 〜GitとGitHubの物語〜　Claudeで小説を書いて、勉強しよう。
+[x] 記事59: Git & GitHub 完全チートシート → `2025-06-07-git-github-complete-cheatsheet.html`
+[ ] 記事60: Claudeにいろんな作家スタイルを真似してもらう。
+[x] 記事61: 「Gemini CLI」がきた。Claude CodeをMaxプランで毎日使ってる人の感想 → `2025-06-26-gemini-cli-vs-claude-code-review.html`
 
-2. **AI駆動開発と呼ぶらしい、開発スタイルまとめてみた**
-   - 公開日：2024-12-09
-   - カテゴリ：AI・開発
+## 優先度別推奨作成順序
 
-3. **【Cody】AI駆動開発でChrome拡張機能をつくった話**
-   - 公開日：2025-01-09
-   - カテゴリ：AI・開発・Chrome拡張
+### 🔥 高優先度（最新・人気記事）
+1. **記事49**: ChatGPTから2年以上。実務に生き残ったAIツール4選？ 2025/02/20ver ✅
+2. **記事16**: Notionでデータベースをつくろうよ📖_04
+3. **記事17**: Save to Notionは必須だよ!!_05
+4. **記事44**: 実務に生き残った【Chrome拡張機能】3選
+5. **記事54**: youtube文字起こしChrome拡張機能
 
-### 中優先度（Notion・AIシリーズ）
-4. **🤖📚AIとNotionはセットでつかう？_01**
-   - 公開日：2024-06-03
-   - カテゴリ：AI・Notion・ワークフロー
+### 📚 中優先度（Notionシリーズ継続）
+6. **記事20**: ChatGPTの履歴をNotionに送れる！ 拡張機能🚀_06
+7. **記事43**: Notion系Chrome拡張機能最強ツール【Save to Notion】に改めてフォーカス
+8. **記事46**: Notion　データベース二つですべてを管理しよ！
+9. **記事37**: AIでNotion Taskerをつくってみた話。マニュアル的にかいていく
 
-5. **Notionってなんだ？_02**
-   - 公開日：2024-06-04
-   - カテゴリ：Notion・入門
+### 📖 書籍メモシリーズ
+10. **記事02**: Notion「かんたんサブスク管理」無料配布！
+11. **記事18**: 本　世界一流エンジニアの思考法📕メモv2
+12. **記事19**: 本　仕事に追われない仕事術 マニャーナの法則 完全版　メモv1
+13. **記事31**: 本　【ダークパターン 人を欺くデザインの手口と対策】のメモ
 
-6. **ChatGPTとNotionシリーズ_0**
-   - 公開日：2024-06-03
-   - カテゴリ：AI・Notion・日記
+### 🎯 技術・AI関連
+14. **記事32**: Macのテキスト入力ショートカットまとめ⌨️✨
+15. **記事39**: AI関連企業リストを出してみた
+16. **記事45**: リサーチはとにかくスピード重視。AIに任せる部分と自分でやる部分
+17. **記事51**: Claude3.7Sonnetの限界を見てしまいました
 
-### 実装時の注意事項
+## 重複チェック済み記事
+- **記事49・52**: 「ChatGPTから2年以上」シリーズは統合済み
+- **記事04・05・06**: 書籍メモ系で類似記事あり、要検証
+- **記事43・17**: Save to Notion関連で重複可能性あり
 
-#### 技術要件
-- [ ] XMLからコンテンツを正確に抽出
-- [ ] 画像パスを`/assets/`から`/images/note/`に変換
-- [ ] canonical URLを各記事に追加
-- [ ] レスポンシブデザインを適用
+## 実装時の注意事項
 
-#### デザイン統一
-- [ ] 記事カテゴリに応じたカラーテーマ選択
+### 技術要件
+- [x] XMLからコンテンツを正確に抽出
+- [x] 画像パスを`/assets/`から`/images/note/`に変換
+- [x] canonical URLを各記事に追加
+- [x] レスポンシブデザインを適用
+
+### デザイン統一
+- [x] 記事カテゴリに応じたカラーテーマ選択
   - AI関連：青・紫グラデーション
   - Notion関連：グレー・青グラデーション
   - 開発関連：緑・青グラデーション
   - 日記・雑記：温かい色調
 
-#### SEO対策
-- [ ] メタディスクリプション（50-100文字）
-- [ ] 適切なキーワード設定
-- [ ] 構造化データの追加
+### SEO対策
+- [x] メタディスクリプション（50-100文字）
+- [x] 適切なキーワード設定
+- [x] 構造化データの追加
 
-#### ファイル管理
-- [ ] ファイル名形式：`YYYY-MM-DD-description.html`
-- [ ] `files.json`への記事メタデータ追加
-- [ ] 画像ファイルの存在確認
-
-### 作業フロー
-1. XMLから記事データ抽出
-2. HTMLテンプレート適用
-3. 画像パス調整
-4. デザイン・レスポンシブ対応
-5. SEO最適化
-6. `files.json`更新
-7. 動作確認
-
-### 推定作業時間
-- 1記事あたり：10-15分
-- 残り53記事：8-13時間
-- バッチ処理による効率化可能
-
-### 次のアクション
-最優先として上記3記事（ChatGPTツール、AI駆動開発、Cody Chrome拡張）の作成から開始し、その後Notion関連シリーズを継続する。
+### ファイル管理
+- [x] ファイル名形式：`YYYY-MM-DD-description.html`
+- [x] `files.json`への記事メタデータ追加
+- [x] 統一CSSとナビゲーション追加（必須）
 
 ## 重要な実装詳細
 
@@ -84,20 +135,7 @@ XMLファイルに61記事あり、現在8記事作成済み。残り53記事の
 - **画像フォルダ**: `/Users/hirokitakamura/Documents/Dev/infohirokiWebsite/images/note/`
 - **メタデータ**: `/Users/hirokitakamura/Documents/Dev/infohirokiWebsite/files.json`
 
-### 既存テンプレート参考
-- **note記事テンプレート**: `2024-05-20-gas-terminology-collection.html`
-- **修正済み記事**: `2024-03-28-notion-subscription-management.html`
-
-### コマンド例
-```bash
-# XMLから記事タイトル検索
-grep -n "タイトル" /Users/hirokitakamura/Documents/Dev/infohirokiWebsite/note/note-hirokitakamura-1.xml
-
-# 画像ファイル確認
-ls /Users/hirokitakamura/Documents/Dev/infohirokiWebsite/images/note/
-```
-
-### HTMLテンプレート構造
+### 必須テンプレート構造
 ```html
 <!DOCTYPE html>
 <html lang="ja">
@@ -105,12 +143,16 @@ ls /Users/hirokitakamura/Documents/Dev/infohirokiWebsite/images/note/
     <meta charset="UTF-8">
     <title>[記事タイトル]</title>
     <link rel="canonical" href="https://infohiroki.com/html-files/[ファイル名]">
+    <link rel="stylesheet" href="../css/style.css">
     <style>
-        /* カテゴリ別カラーテーマ */
         background: linear-gradient(135deg, [色1], [色2]);
     </style>
 </head>
 <body>
+    <nav class="article-nav article-nav-top">
+        <a href="../blog.html" class="back-link">← ブログ一覧</a>
+    </nav>
+    
     <div class="container">
         <header>[アイコン] [タイトル]</header>
         <div class="content">[本文]</div>
@@ -120,39 +162,13 @@ ls /Users/hirokitakamura/Documents/Dev/infohirokiWebsite/images/note/
         </div>
         <footer>note記事アーカイブ - infohiroki.com</footer>
     </div>
+    
+    <nav class="article-nav article-nav-bottom">
+        <a href="../blog.html" class="back-to-list">他の記事を読む</a>
+    </nav>
 </body>
 </html>
 ```
 
-### 完了済み記事リスト
-1. ✅ 2024-03-27-notion-save-to-notion-extension.html
-2. ✅ 2024-03-28-notion-subscription-management.html (修正済み)
-3. ✅ 2024-03-29-chatgpt-reskilling-guide.html
-4. ✅ 2024-04-08-book-output-reading-technique-memo.html
-5. ✅ 2024-05-17-book-world-class-engineer-thinking-memo.html
-6. ✅ 2024-05-19-prompt-design-guide.html
-7. ✅ 2024-05-20-programming-terminology-collection.html
-8. ✅ 2024-05-20-gas-terminology-collection.html
-
-### 新規作成記事（2025年7月作成）
-9. ✅ 2025-06-26-gemini-cli-vs-claude-code-review.html
-   - タイトル: 「Gemini CLI」がきた。Claude CodeをMaxプランで毎日使ってる人の感想
-   - カテゴリ: AI開発ツール比較・レビュー
-   - 作成日: 2025年7月1日
-   
-10. ✅ 2025-06-07-git-github-complete-cheatsheet.html
-    - タイトル: Git & GitHub 完全チートシート
-    - カテゴリ: 開発ツール・リファレンス
-    - 作成日: 2025年7月1日
-
-11. ✅ 2025-06-06-cursor-1-0-new-features.html
-    - タイトル: 🎉 Cursor 1.0 の主要新機能
-    - カテゴリ: AI開発ツール・新機能解説
-    - 作成日: 2025年7月1日
-    - 特徴: 技術解説+創作小説の組み合わせ
-
-12. ✅ 2024-12-09-ai-driven-development-summary.html
-    - タイトル: AI駆動開発と呼ぶらしい、開発スタイルまとめてみた
-    - カテゴリ: AI開発手法・ワークフロー解説
-    - 作成日: 2025年7月1日
-    - 特徴: Cursor、Claude、Dify等のツール使い分け戦略
+### 次のアクション
+重複排除とクオリティ向上を重視し、上記の優先度順で残り38記事を効率的に作成する。バッチ処理を活用してアトミックコミットを維持する。
