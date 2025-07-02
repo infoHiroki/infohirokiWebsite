@@ -145,22 +145,6 @@
       "created": "2024-06-03"
     },
     {
-      "id": "ai-notion-workflow",
-      "path": "2024-06-03-note-ai-notion-workflow.html",
-      "title": "🤖📚AIとNotionはセットでつかう？_01",
-      "description": "AIツールとNotionを組み合わせた効率的なワークフローの構築方法を解説。ChatGPTなどのAIツールとNotionの連携で情報管理と生産性を向上させるテクニックを紹介します。",
-      "tags": [
-        "note",
-        "AI",
-        "Notion",
-        "ワークフロー",
-        "効率化",
-        "ChatGPT",
-        "生産性向上"
-      ],
-      "created": "2024-06-03"
-    },
-    {
       "id": "cody-ai-chrome-extension-development",
       "path": "2025-01-09-cody-ai-chrome-extension-development.html",
       "title": "【Cody】AI駆動開発でChrome拡張機能をつくった話。【YoutubeTranscriptCopier】",
@@ -1138,7 +1122,7 @@
       "created": "2024-05-19"
     },
     {
-      "id": "ai-notion-workflow-alt",
+      "id": "ai-notion-workflow",
       "path": "2024-06-03-ai-notion-workflow.html",
       "title": "🤖📚AIとNotionはセットでつかう？_01",
       "description": "ChatGPTとNotionを組み合わせた効率的なワークフロー構築の必要性とメリットを解説。AI時代の情報管理術を学ぼう。",
