@@ -1,6 +1,39 @@
 {
   "files": [
     {
+      "id": "notion-database-creation-guide",
+      "path": "2024-06-06-notion-database-creation-guide.html",
+      "title": "Notionでデータベースをつくろうよ📖_04",
+      "description": "Notionのデータベース作成方法を分かりやすく解説。インラインとフルページの違い、リンクドビューの活用法まで実践的なガイド。",
+      "tags": [
+        "note",
+        "Notion",
+        "データベース",
+        "チュートリアル",
+        "生産性",
+        "DB",
+        "インライン",
+        "フルページ"
+      ],
+      "created": "2024-06-06"
+    },
+    {
+      "id": "chrome-extensions-practical-3-selections",
+      "path": "2025-01-26-chrome-extensions-practical-3-selections.html",
+      "title": "実務に生き残った【Chrome拡張機能】3選",
+      "description": "実務で本当に役立つChrome拡張機能を厳選。Save to Notion、OneTab、GoFullPageなど、生産性を向上させる必須ツールを紹介。",
+      "tags": [
+        "note",
+        "Chrome拡張機能",
+        "生産性",
+        "Save to Notion",
+        "OneTab",
+        "実務ツール",
+        "スクリーンショット"
+      ],
+      "created": "2025-01-26"
+    },
+    {
       "id": "cursor-1-0-new-features",
       "path": "2025-06-06-cursor-1-0-new-features.html",
       "title": "🎉 Cursor 1.0 の主要新機能",
@@ -1100,6 +1133,40 @@
         "ナレッジベース"
       ],
       "created": "2024-06-25"
+    },
+    {
+      "id": "ai-prompt-design-guide",
+      "path": "2024-05-19-ai-prompt-design-guide.html",
+      "title": "プロンプトデザインまとめ。たまに見るといい。",
+      "description": "効果的なプロンプトデザインの8つの技術を重要度順に体系的に解説。ChatGPTやAIツールを使う際に参考になる実践的なガイドです。",
+      "tags": [
+        "note",
+        "プロンプトデザイン",
+        "ChatGPT",
+        "AI",
+        "ゼロショット",
+        "フューショット",
+        "プロンプト技術",
+        "人工知能"
+      ],
+      "created": "2024-05-19"
+    },
+    {
+      "id": "ai-notion-workflow-alt",
+      "path": "2024-06-03-ai-notion-workflow.html",
+      "title": "🤖📚AIとNotionはセットでつかう？_01",
+      "description": "ChatGPTとNotionを組み合わせた効率的なワークフロー構築の必要性とメリットを解説。AI時代の情報管理術を学ぼう。",
+      "tags": [
+        "note",
+        "ChatGPT",
+        "Notion",
+        "AI",
+        "ワークフロー",
+        "情報管理",
+        "生産性向上",
+        "NotionAI"
+      ],
+      "created": "2024-06-03"
     }
   ]
 }
