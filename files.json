@@ -1177,6 +1177,59 @@
         "Google"
       ],
       "created": "2025-07-01"
+    },
+    {
+      "id": "youtube-transcript-copier-ai-development",
+      "path": "2025-01-21-youtube-transcript-copier-ai-development.html",
+      "title": "【AI駆動開発】YouTube字幕コピペ拡張機能で、リサーチと学習がマジで爆速になるって話。",
+      "description": "AI駆動開発でYouTube字幕コピー拡張機能を作る完全ガイド。Chrome拡張機能開発を通してAI活用の実践的手法を学ぶ、リサーチと学習の効率化ツール開発記。",
+      "tags": [
+        "note",
+        "AI駆動開発",
+        "Chrome拡張機能",
+        "YouTube字幕",
+        "リサーチツール",
+        "JavaScript",
+        "AI活用",
+        "開発効率化"
+      ],
+      "created": "2025-01-21"
+    },
+    {
+      "id": "chatgpt-survived-ai-tools-4-selections-2025",
+      "path": "2025-02-20-chatgpt-survived-ai-tools-4-selections-2025.html",
+      "title": "ChatGPTから2年以上。実務に生き残ったAIツール4選？ 2025/02/20ver",
+      "description": "ChatGPT登場から2年以上経過した2025年版、実務で本当に生き残ったAIツール4選。Google AI Studio、Gemini DeepResearch、NotebookLM、AI駆動開発ツールを実体験ベースで詳細比較。",
+      "tags": [
+        "note",
+        "ChatGPT",
+        "AIツール",
+        "Google AI Studio",
+        "Gemini DeepResearch",
+        "NotebookLM",
+        "AI駆動開発",
+        "実務活用",
+        "2025年"
+      ],
+      "created": "2025-02-20"
+    },
+    {
+      "id": "ai-notion-casual-talk",
+      "path": "2024-06-25-ai-notion-casual-talk.html",
+      "title": "AIとかNotionのだらだら話す",
+      "description": "ChatGPTとNotionを活用したリスキリングと生産性向上の実践ガイド。AI時代に必要な情報管理術とワークフロー最適化の考察を詳しく解説。",
+      "tags": [
+        "note",
+        "ChatGPT",
+        "Notion",
+        "リスキリング",
+        "AI活用",
+        "情報管理",
+        "生産性向上",
+        "ワークフロー",
+        "ナレッジベース"
+      ],
+      "created": "2024-06-25"
     }
   ]
 }
