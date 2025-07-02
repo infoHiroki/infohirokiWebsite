@@ -369,20 +369,6 @@
       "created": "2024-05-20"
     },
     {
-      "id": "prompt-design-guide",
-      "path": "2024-05-19-prompt-design-guide.html",
-      "title": "プロンプトデザインまとめ。たまに見るといい。",
-      "description": "効果的なプロンプトデザインの基本原則とテクニックをまとめました。ChatGPTやAIツールを使う際に参考になるガイドです。",
-      "tags": [
-        "note",
-        "AI",
-        "プロンプト",
-        "ChatGPT",
-        "設計"
-      ],
-      "created": "2024-05-19"
-    },
-    {
       "id": "book-output-reading-technique-memo",
       "path": "2024-04-08-book-output-reading-technique-memo.html",
       "title": "本『自己肯定感を上げる OUTPUT読書術』のメモ",
