@@ -191,6 +191,21 @@
         ul li {
             margin: 8px 0;
         }
+        .article-image {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .article-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .article-image img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(66, 133, 244, 0.2);
+        }
         
         @media (max-width: 768px) {
             body {
@@ -226,6 +241,10 @@
         </header>
 
         <div class="content">
+            <div class="article-image">
+                <img src="/images/note/n7d93c00246fd_d8835b6fc420448474d9eec26b0ab974.png" alt="Gemini CLI 記事のヘッダー画像" style="width: 100%; max-width: 800px; height: auto; border-radius: 10px; margin: 20px 0;">
+            </div>
+
             <div class="links-section">
                 <h2>一次情報はこの辺かな。</h2>
                 <ul>
@@ -311,6 +330,10 @@
 
             <h2>使用例</h2>
 
+            <div class="article-image">
+                <img src="/images/note/n7d93c00246fd_1750900373-vto41IGXPLc8kJ2BZY3gdpDl.png" alt="Gemini CLI 使用例のスクリーンショット" style="width: 100%; max-width: 620px; height: auto; border-radius: 10px; margin: 20px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            </div>
+
             <div class="use-cases">
                 <div class="use-case-card">
                     <h3>新規プロジェクトの開始</h3>
@@ -354,6 +377,10 @@ gemini
                     <pre><code>> Convert all the images in this directory to png, and rename them to use dates from the exif data.
 > Organise my PDF invoices by month of expenditure.</code></pre>
                 </div>
+            </div>
+
+            <div class="article-image">
+                <img src="/images/note/n7d93c00246fd_1750900973-d8arbSNGM4xLA7HQfDgsV9Ej.png" alt="Gemini CLI スラッシュコマンド一覧" style="width: 100%; max-width: 620px; height: auto; border-radius: 10px; margin: 20px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
             </div>
 
             <div class="commands-list">
