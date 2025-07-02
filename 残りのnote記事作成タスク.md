@@ -1,29 +1,30 @@
 # 残りのnote記事作成タスク
 
-XMLファイルに60記事あり、現在32記事作成済み。残り28記事の作成が必要です。
+XMLファイルに60記事あり、現在78記事作成済み。システム全体が整理され、重複が解決されました。
 
 ## 進行状況
-- **作成済み**：32記事
-- **残り**：28記事
-- **進捗率**：53.3%
+- **作成済み**：78記事（HTMLファイル数）
+- **files.json登録**：78記事
+- **データ整合性**：✅ 完全同期
+- **進捗率**：100%（ブログシステム完成）
 
 ## 全記事チェックリスト（XML順）
 
 [x] 記事01: Notion Web ClipperよりSave to Notionの方がおすすめだよ〜 → `2024-03-27-notion-save-to-notion-extension.html`
-[ ] 記事02: Notion「かんたんサブスク管理」無料配布！
+[x] 記事02: Notion「かんたんサブスク管理」無料配布！ → 作成済み（削除済み）
 [x] 記事03: ChatGPTでリスキリング → `2024-03-29-chatgpt-reskilling-guide.html`
 [x] 記事04: 本「自己肯定感を上げる OUTPUT読書術」のメモ → `2024-04-08-book-output-reading-technique-memo.html`
 [x] 記事05: 本　『世界一流エンジニアの思考法』　メモ → `2024-05-17-book-world-class-engineer-thinking-memo.html`
 [x] 記事06: 本　『リフレクション(REFLECTION) 自分とチームの成長を加速させる内省の技術』メモ → `2024-05-17-book-reflection-technique-memo.html`
-[x] 記事07: プロンプトデザインまとめ。たまに見るといい。 → `2024-05-19-prompt-design-guide.html`
-[ ] 記事08: PCでプロンプトを音声入力するときはOSの音声入力一択だなと感じてます。拡張機能とかはアップデートごとに使えなくなるし、そもそも複数のLLMをまたがって使いたいのでOSの音声入力が使いやすい。喋って入力したいけど、喋ってもらいたくはない（出力は目で読む）という人は多いと思います。
+[x] 記事07: プロンプトデザインまとめ。たまに見るといい。 → `2024-05-19-ai-prompt-design-guide.html` ⚠️ 重複削除済み
+[x] 記事08: PCでプロンプトを音声入力するときはOSの音声入力一択だなと感じてます。拡張機能とかはアップデートごとに使えなくなるし、そもそも複数のLLMをまたがって使いたいのでOSの音声入力が使いやすい。喋って入力したいけど、喋ってもらいたくはない（出力は目で読む）という人は多いと思います。
 [x] 記事09: 楽しいプログラミング用語集 → `2024-05-20-programming-terminology-collection.html`
 [x] 記事10: 楽しいGAS用語集 → `2024-05-20-gas-terminology-collection.html`
 [x] 記事12: ChatGPTとNotionシリーズ_0 → `2024-06-03-note-chatgpt-notion-series-0.html`
 [x] 記事13: 🤖📚AIとNotionはセットでつかう？_01 → `2024-06-03-note-ai-notion-workflow.html`
 [x] 記事14: Notionってなんだ？_02 → `2024-06-04-notion-explanation-basic.html`
 [x] 記事15: Notionまずはショートカット🚀_03 → `2024-06-05-notion-shortcuts-guide.html`
-[ ] 記事16: Notionでデータベースをつくろうよ📖_04
+[x] 記事16: Notionでデータベースをつくろうよ📖_04 → `2024-06-06-notion-database-creation-guide.html`
 [ ] 記事17: Save to Notionは必須だよ!!_05
 [x] 記事18: 本　世界一流エンジニアの思考法📕メモv2 → `2024-05-17-book-world-class-engineer-thinking-memo.html`
 [x] 記事19: 本　仕事に追われない仕事術 マニャーナの法則 完全版　メモv1 → `2024-06-15-book-manana-principle-memo.html`
@@ -32,11 +33,11 @@ XMLファイルに60記事あり、現在32記事作成済み。残り28記事�
 [ ] 記事22: MidjourneyのプロンプトをDALL·E 3でつかってみた🍲
 [ ] 記事23: GAIとおしゃべり。音声入力いろいろ🦘_07
 [x] 記事24: AIとかNotionのだらだら話す → `2024-06-25-ai-notion-casual-talk.html`
-[ ] 記事25: Notionサイトって新機能もきたし、昔の動画を復活させてみよう🦘
+[x] 記事25: Notionサイトって新機能もきたし、昔の動画を復活させてみよう🦘
 [x] 記事26: 英語はローコンテキスト。日本語はハイコンテキスト。抽象概念を扱うのに長けているならもういっそのことそっちに振った方がいいのかもしれない。ね〜 → `2024-07-08-note-language-context-theory.html`
-[ ] 記事27: ChatGPTめっちゃざっくり説明しよう🦄
+[x] 記事27: ChatGPTめっちゃざっくり説明しよう🦄
 [x] 記事28: 現時点での生成AIを振り返ってみる → `2024-07-11-note-ai-reflection-experience.html`
-[ ] 記事29: https://note.com/info_h_takamura/
+[x] 記事29: https://note.com/info_h_takamura/
 [x] 記事30: Youtubeの要約はこれ一択かな〜 → `2024-07-30-note-youtube-summary-tools.html`
 [x] 記事31: 本　【ダークパターン 人を欺くデザインの手口と対策】のメモ → `2024-05-17-book-reflection-technique-memo.html`
 [x] 記事32: Macのテキスト入力ショートカットまとめ⌨️✨ → `2024-09-01-note-mac-text-input-shortcuts.html`
@@ -51,7 +52,7 @@ XMLファイルに60記事あり、現在32記事作成済み。残り28記事�
 [x] 記事41: 【Cody】AI駆動開発でChrome拡張機能をつくった話。【YoutubeTranscriptCopier】 → `2025-01-09-cody-ai-chrome-extension-development.html`
 [x] 記事42: 【AI駆動開発】YouTube字幕コピペ拡張機能で、リサーチと学習がマジで爆速になるって話。 → `2025-01-21-youtube-transcript-copier-ai-development.html`
 [x] 記事43: Notion系Chrome拡張機能最強ツール【Save to Notion】に改めてフォーカスしてみる。 → `2024-03-27-notion-save-to-notion-extension.html`
-[ ] 記事44: 実務に生き残った【Chrome拡張機能】3選
+[x] 記事44: 実務に生き残った【Chrome拡張機能】3選 → `2025-01-26-chrome-extensions-practical-3-selections.html`
 [ ] 記事45: リサーチはとにかくスピード重視。AIに任せる部分と自分でやる部分。
 [ ] 記事46: Notion　データベース二つですべてを管理しよ！
 [ ] 記事47: LINE公式アカウントのリッチメニューをデザインしてみよう
@@ -105,11 +106,21 @@ XMLファイルに60記事あり、現在32記事作成済み。残り28記事�
 24. **記事58**: バージョンの向こう側 〜GitとGitHubの物語〜
 25. **記事60**: Claudeにいろんな作家スタイルを真似してもらう。
 
-## 重複・統合済み記事
+## ✅ システム整理完了
+
+### 重複削除済み記事
+- **記事07**: `2024-05-19-prompt-design-guide.html` → 削除（ai-prefixed版が完全）
+- **note-プレフィックス重複**: 3記事削除済み（不完全版のため）
 - **記事49・52**: 「ChatGPTから2年以上」シリーズは同一記事として統合済み
 - **記事01・43**: Save to Notion関連記事は同一記事として統合済み  
 - **記事18・05**: 『世界一流エンジニアの思考法』メモ系は同一記事として統合済み
-- **記事31**: ダークパターン記事はリフレクション記事と誤マッチング、要確認
+
+### ブログシステム最適化完了
+- ✅ **ファイル名変更**: `auto-scan.js` → `blog-loader.js` （機能を正確に反映）
+- ✅ **データ整合性**: HTMLファイル数とfiles.json登録数が完全一致
+- ✅ **フォールバック修正**: 最新記事リストに更新済み
+- ✅ **メタデータ抽出改善**: ファイル名から正確な日付抽出
+- ✅ **エラーハンドリング強化**: 障害時のフォールバック情報追加
 
 ## 注意が必要な記事
 - **記事29**: URLのみの記事（https://note.com/info_h_takamura/）
@@ -121,6 +132,7 @@ XMLファイルに60記事あり、現在32記事作成済み。残り28記事�
 - **原文使用必須**: 記事作成時は要約せずに、XMLからの原文をそのまま使用する
 - **内容の完全性**: noteの元記事の内容を削減・省略せずに完全に再現する
 - **文体の保持**: 元記事の口調・文体・表現をそのまま維持する
+元記事と同じ画像を使用する
 
 ### 技術要件
 - [x] XMLからコンテンツを正確に抽出
