@@ -43,8 +43,9 @@ class HTMLFileScanner {
       tags = [...new Set([...tags, ...titleTags])];
       
       
-      // ファイル情報の修正日時取得（代替としてDate.now()使用）
-      const created = new Date().toISOString().split('T')[0];
+      // ファイル名から作成日を抽出（YYYY-MM-DD-パターン）
+      const dateMatch = filePath.match(/(\d{4}-\d{2}-\d{2})/);
+      const created = dateMatch ? dateMatch[1] : new Date().toISOString().split('T')[0];
       
       return {
         id: this.generateId(filePath),
@@ -56,7 +57,20 @@ class HTMLFileScanner {
       };
     } catch (error) {
       console.warn(`Failed to extract metadata from ${filePath}:`, error);
-      return null;
+      
+      // 基本的なフォールバック情報を返す
+      const dateMatch = filePath.match(/(\d{4}-\d{2}-\d{2})/);
+      const created = dateMatch ? dateMatch[1] : new Date().toISOString().split('T')[0];
+      const fileName = filePath.split('/').pop()?.replace('.html', '') || 'Unknown';
+      
+      return {
+        id: this.generateId(filePath),
+        path: filePath,
+        title: fileName.replace(/[-_]/g, ' '),
+        description: 'ファイル読み込みエラーが発生しました',
+        tags: ['error'],
+        created: created
+      };
     }
   }
 
@@ -112,23 +126,29 @@ class HTMLFileScanner {
         if (data.files && Array.isArray(data.files)) {
           console.log(`✅ files.jsonから${data.files.length}個のファイルを読み込みました`);
           
-          // files.jsonのデータをそのまま返す（pathを補完）
-          return data.files.map(file => ({
-            ...file,
-            path: file.path.startsWith('html-files/') ? file.path : `html-files/${file.path}`
-          }));
+          // files.jsonのデータをそのまま返す（pathの確認とログ出力）
+          const processedFiles = data.files.map(file => {
+            const finalPath = file.path.startsWith('html-files/') ? file.path : `html-files/${file.path}`;
+            console.log(`処理中: ${file.title} -> ${finalPath}`);
+            return {
+              ...file,
+              path: finalPath
+            };
+          });
+          console.log(`処理完了: ${processedFiles.length}件のファイル`);
+          return processedFiles;
         }
       }
     } catch (error) {
       console.log('⚠️ files.jsonの読み込みに失敗しました。フォールバックを使用します。', error);
     }
 
-    // フォールバック: ハードコードされたリスト（新ファイル名）
+    // フォールバック: 最新記事のサンプル（files.json失敗時のみ使用）
     const potentialFiles = [
-      'html-files/2025-06-26-system-education-training.html',
-      'html-files/2025-06-26-edu-ai-summary.html',
-      'html-files/2025-06-26-tech-llmo-checklist.html',
-      'html-files/2025-06-26-tech-claude-code.html',
+      'html-files/2025-07-01-google-gemini-cli-report.html',
+      'html-files/2025-06-28-tech-ai-seo-strategy.html',
+      'html-files/2025-06-27-tech-vscode-github-copilot.html',
+      'html-files/2025-06-26-gemini-cli-vs-claude-code-review.html',
       'html-files/2025-06-26-tech-go-tutorial.html',
     ];
 

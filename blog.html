@@ -394,7 +394,7 @@
     </div>
     
     <script src="js/main.js"></script>
-    <script src="auto-scan.js"></script>
+    <script src="blog-loader.js"></script>
     <script>
         // HTMLVault機能を統合 - infohirokiデザイン対応
         let allFiles = [];
@@ -403,16 +403,23 @@
         let searchQuery = '';
         let autoManager = null;
         
-        // auto-scan.jsを使用したファイル読み込み
+        // blog-loader.jsを使用したファイル読み込み
         async function loadFiles() {
             try {
-                // まず auto-scan.js の AutoFileManager を試行
+                // blog-loader.js の AutoFileManager を使用
                 if (!autoManager) {
                     autoManager = new AutoFileManager();
                 }
                 
                 allFiles = await autoManager.refreshFileList();
                 console.log('自動検出されたファイル:', allFiles);
+                console.log(`🔍 読み込み結果: ${allFiles.length}件のファイルが検出されました`);
+                
+                // 問題のある記事を特別にチェック
+                const notionArticle = allFiles.find(f => f.id === 'notion-database-creation-guide');
+                const chromeArticle = allFiles.find(f => f.id === 'chrome-extensions-practical-3-selections');
+                console.log('Notion記事:', notionArticle);
+                console.log('Chrome拡張記事:', chromeArticle);
                 
                 // フォールバック: 直接files.jsonを読み込み
                 if (allFiles.length === 0) {
