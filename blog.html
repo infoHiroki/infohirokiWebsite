@@ -213,6 +213,32 @@
             border-color: var(--color-accent);
         }
         
+        /* ブログカード内アイコンスタイル - 左上配置 */
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .article-icon {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            border-radius: 6px;
+            font-size: 32px;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .article-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
         .no-results {
             text-align: center;
             padding: var(--spacing-xxl);
@@ -256,6 +282,13 @@
             
             .search-input {
                 font-size: 16px; /* iOS対応 */
+            }
+            
+            /* モバイル環境でのアイコン調整 */
+            .article-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 28px;
             }
         }
     </style>
@@ -456,9 +489,32 @@
             const moreTagsCount = (file.tags || []).length > 4 ? (file.tags || []).length - 4 : 0;
             const moreTagsHtml = moreTagsCount > 0 ? `<span class="tag">+${moreTagsCount}</span>` : '';
             
+            // アイコン表示ロジック
+            function renderIcon(icon) {
+                if (!icon) {
+                    return '<span class="article-icon">📝</span>'; // デフォルトアイコン
+                }
+                
+                // Skill Icons URL形式の場合
+                if (icon.startsWith('https://skillicons.dev/icons')) {
+                    return `<img src="${icon}" class="article-icon" alt="icon">`;
+                }
+                
+                // ローカル画像ファイルの場合
+                if (icon.includes('.png') || icon.includes('.jpg') || icon.includes('.svg') || icon.includes('.webp')) {
+                    return `<img src="${icon}" class="article-icon" alt="icon">`;
+                }
+                
+                // 絵文字の場合
+                return `<span class="article-icon">${icon}</span>`;
+            }
+            
+            const iconHtml = renderIcon(file.icon);
+            
             return `
                 <article class="article-card" onclick="openFile('${file.path}')">
                     <div class="article-header">
+                        ${iconHtml}
                         <time class="article-date">${file.created}</time>
                     </div>
                     <div class="card-body">

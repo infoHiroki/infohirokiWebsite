@@ -227,6 +227,67 @@ about.html（スキルスタックページ）では、技術スタックのア�
 }
 ```
 
+## ブログ記事アイコン管理
+
+### 概要
+ブログカードに視覚的なアイコンを表示し、記事カテゴリを直感的に識別可能にします。files.jsonに`icon`フィールドを追加して手動管理します。
+
+### アイコンフィールド追加方法
+```json
+{
+  "id": "example-article",
+  "path": "YYYY-MM-DD-description.html",
+  "title": "記事タイトル",
+  "description": "記事の説明",
+  "icon": "https://skillicons.dev/icons?i=react",
+  "tags": ["tag1", "tag2"],
+  "created": "YYYY-MM-DD"
+}
+```
+
+### アイコン選択ガイドライン
+
+#### 1. 技術系記事（Skill Icons推奨）
+- **JavaScript**: `https://skillicons.dev/icons?i=js`
+- **Python**: `https://skillicons.dev/icons?i=python`
+- **React**: `https://skillicons.dev/icons?i=react`
+- **GitHub/Git**: `https://skillicons.dev/icons?i=github` / `https://skillicons.dev/icons?i=git`
+- **Docker**: `https://skillicons.dev/icons?i=docker`
+- **Chrome拡張**: `https://skillicons.dev/icons?i=chrome`
+- **VS Code**: `https://skillicons.dev/icons?i=vscode`
+- **Node.js**: `https://skillicons.dev/icons?i=nodejs`
+- **TypeScript**: `https://skillicons.dev/icons?i=ts`
+
+#### 2. カテゴリ別絵文字アイコン
+- **AI関連**: `🤖`
+- **note記事**: `📝`
+- **Notion関連**: `📋`
+- **読書メモ**: `📚`
+- **開発ガイド**: `📖`
+- **チーム開発**: `👥`
+- **習慣形成**: `🎯`
+- **プロジェクト管理**: `📊`
+- **教育・学習**: `🎓`
+- **一般記事**: `📄`
+
+#### 3. 複合的な記事の優先順位
+1. **主要技術** → Skill Icons
+2. **記事カテゴリ** → 絵文字
+3. **デフォルト** → `📝`
+
+### 実装ルール
+- **新規記事**: 作成時に必ずiconフィールドを追加
+- **既存記事**: 段階的に重要記事からアイコン追加
+- **フォールバック**: iconフィールドなしの場合は`📝`を表示
+- **アイコンサイズ**: 統一して24px（ブログカード用、スキルスタックより小さめ）
+
+### 記事作成時のチェックリスト
+- [ ] 適切なファイル名（YYYY-MM-DD-description.html）
+- [ ] files.jsonにメタデータ追加
+- [ ] **iconフィールドの追加** ← 新規追加
+- [ ] 統一CSSとナビゲーション
+- [ ] canonical URL設定
+
 ## XMLファイル管理・記事作成状況
 
 ### note.com記事移行プロジェクト
