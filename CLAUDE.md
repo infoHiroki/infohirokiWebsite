@@ -230,61 +230,40 @@ about.html（スキルスタックページ）では、技術スタックのア�
 ## ブログ記事アイコン管理
 
 ### 概要
-ブログカードに視覚的なアイコンを表示し、記事カテゴリを直感的に識別可能にします。files.jsonに`icon`フィールドを追加して手動管理します。
+ブログカードに視覚的なアイコンを表示し、記事カテゴリを直感的に識別可能にします。files.jsonに`icon`フィールドを追加して管理します。
 
-### アイコンフィールド追加方法
-```json
-{
-  "id": "example-article",
-  "path": "YYYY-MM-DD-description.html",
-  "title": "記事タイトル",
-  "description": "記事の説明",
-  "icon": "https://skillicons.dev/icons?i=react",
-  "tags": ["tag1", "tag2"],
-  "created": "YYYY-MM-DD"
-}
-```
+### 現在の実装状況（2025年7月3日更新）
+- **総記事数**: 77記事 ✅ 全記事にアイコン設定完了
+- **Skill Icons**: 22記事（技術系記事優先）
+- **ローカル画像**: 16記事（ChatGPT、Claude、Gemini、Chrome等）
+- **絵文字アイコン**: 39記事（AI関連🤖、習慣形成🎯、読書📚等）
+- **アイコンサイズ**: デスクトップ40px、モバイル36px
 
-### アイコン選択ガイドライン
+### アイコン優先順位（実装済み）
+1. **Skill Icons優先**: 存在する技術アイコンは必ずSkill Iconsを使用
+2. **ローカル画像**: 高品質ブランドアイコン（ChatGPT、Claude、Gemini等）
+3. **絵文字**: 上記以外のカテゴリ
 
-#### 1. 技術系記事（Skill Icons推奨）
-- **JavaScript**: `https://skillicons.dev/icons?i=js`
-- **Python**: `https://skillicons.dev/icons?i=python`
-- **React**: `https://skillicons.dev/icons?i=react`
-- **GitHub/Git**: `https://skillicons.dev/icons?i=github` / `https://skillicons.dev/icons?i=git`
-- **Docker**: `https://skillicons.dev/icons?i=docker`
-- **Chrome拡張**: `https://skillicons.dev/icons?i=chrome`
-- **VS Code**: `https://skillicons.dev/icons?i=vscode`
-- **Node.js**: `https://skillicons.dev/icons?i=nodejs`
-- **TypeScript**: `https://skillicons.dev/icons?i=ts`
+### 技術系アイコン（Skill Icons）
+- **確認済み存在**: notion, git, github, docker, figma, fastapi, react, go, python, obsidian, vscode, firebase
+- **存在しない**: chrome, youtube（ローカル画像で代替）
 
-#### 2. カテゴリ別絵文字アイコン
-- **AI関連**: `🤖`
-- **note記事**: `📝`
-- **Notion関連**: `📋`
-- **読書メモ**: `📚`
-- **開発ガイド**: `📖`
-- **チーム開発**: `👥`
-- **習慣形成**: `🎯`
-- **プロジェクト管理**: `📊`
-- **教育・学習**: `🎓`
-- **一般記事**: `📄`
+### ローカル画像アイコン（images/フォルダ）
+- **ChatGPT関連**: `./images/ChatGPT icon.webp`
+- **Claude関連**: `./images/Claude AI icon.webp`
+- **Gemini関連**: `./images/Gemini.png`
+- **Chrome拡張**: `./images/Google Chrome icon.png`
+- **YouTube**: `./images/Youtube Color icon.png`
 
-#### 3. 複合的な記事の優先順位
-1. **主要技術** → Skill Icons
-2. **記事カテゴリ** → 絵文字
-3. **デフォルト** → `📝`
-
-### 実装ルール
-- **新規記事**: 作成時に必ずiconフィールドを追加
-- **既存記事**: 段階的に重要記事からアイコン追加
-- **フォールバック**: iconフィールドなしの場合は`📝`を表示
-- **アイコンサイズ**: 統一して24px（ブログカード用、スキルスタックより小さめ）
+### ブログページ実装
+- アイコン表示ロジック拡張済み（Skill Icons、ローカル画像、絵文字対応）
+- レスポンシブ対応（デスクトップ・モバイル最適化）
+- GPUアクセラレーション適用
 
 ### 記事作成時のチェックリスト
 - [ ] 適切なファイル名（YYYY-MM-DD-description.html）
 - [ ] files.jsonにメタデータ追加
-- [ ] **iconフィールドの追加** ← 新規追加
+- [ ] **iconフィールドの追加**（必須・Skill Icons優先）
 - [ ] 統一CSSとナビゲーション
 - [ ] canonical URL設定
 
