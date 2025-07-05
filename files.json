@@ -1215,6 +1215,43 @@
         "実践ガイド"
       ],
       "created": "2025-07-03"
+    },
+    {
+      "id": "quantum-grover-algorithm-infographic",
+      "path": "2025-01-05-quantum-grover-algorithm-infographic.html",
+      "title": "量子コンピューターとGroverのアルゴリズム",
+      "description": "量子コンピューターの検索アルゴリズム「Grover」の詳細解説インフォグラフィック。古典vs量子の比較、状態ベクトル、計算複雑度O(√n)の実現原理を視覚的に解説。",
+      "icon": "⚛️",
+      "tags": [
+        "量子コンピューター",
+        "Groverアルゴリズム",
+        "計算複雑度",
+        "量子ビット",
+        "検索アルゴリズム",
+        "状態ベクトル",
+        "インフォグラフィック",
+        "技術解説"
+      ],
+      "created": "2025-01-05"
+    },
+    {
+      "id": "openai-podcast-comprehensive-summary",
+      "path": "2025-01-05-openai-podcast-comprehensive-summary.html",
+      "title": "OpenAIポッドキャスト - ChatGPTの初期バイラル時代とAIの未来",
+      "description": "OpenAI中核メンバーが語るChatGPT誕生秘話と未来展望。命名の偶然、4日間でのバイラル化、技術的課題への対応、ImageGen革新、O3モデルの科学研究応用まで包括的解説。",
+      "icon": "🎙️",
+      "tags": [
+        "OpenAI",
+        "ChatGPT",
+        "ポッドキャスト",
+        "AI技術",
+        "ImageGen",
+        "誕生秘話",
+        "バイラル化",
+        "技術革新",
+        "未来展望"
+      ],
+      "created": "2025-01-05"
     }
   ]
 }
