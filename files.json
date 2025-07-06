@@ -1252,6 +1252,24 @@
         "未来展望"
       ],
       "created": "2025-07-05"
+    },
+    {
+      "id": "plotly-dash-dashboard-guide",
+      "path": "plotly_dash_dashboard_guide.html",
+      "title": "PlotlyとDashでダッシュボード作成ガイド",
+      "description": "Pythonでインタラクティブなダッシュボードを作る完全ガイド。Plotly（グラフ描画）とDash（Webフレームワーク）の基礎から実装まで実践的に解説。",
+      "icon": "https://skillicons.dev/icons?i=python",
+      "tags": [
+        "Python",
+        "Plotly",
+        "Dash",
+        "ダッシュボード",
+        "データ可視化",
+        "インタラクティブ",
+        "Webアプリ",
+        "チュートリアル"
+      ],
+      "created": "2025-07-06"
     }
   ]
 }
