@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="業界別生成AI導入シナリオ - 医療機関・製造業・サービス業での具体的な導入の流れと実績をご紹介">
+    <title>業界別導入シナリオ | infohiroki</title>
+    
+    <!-- OGPタグ -->
+    <meta property="og:title" content="業界別導入シナリオ | infohiroki">
+    <meta property="og:description" content="業界別生成AI導入シナリオ - 医療機関・製造業・サービス業での具体的な導入の流れと実績をご紹介">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="infohiroki">
+    <meta property="og:locale" content="ja_JP">
+    
+    <!-- Twitterカード -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="業界別導入シナリオ | infohiroki">
+    <meta name="twitter:description" content="業界別生成AI導入シナリオ - 医療機関・製造業・サービス業での具体的な導入の流れと実績をご紹介">
+    
+    <!-- ファビコン -->
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 構造化データ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "業界別導入シナリオ",
+      "description": "業界別生成AI導入シナリオ - 医療機関・製造業・サービス業での具体的な導入の流れと実績をご紹介",
+      "author": {
+        "@type": "Organization",
+        "name": "infohiroki"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "infohiroki",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "images/logo.svg"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+    <div class="site-layout">
+        <!-- モバイル用ヘッダー -->
+        <header class="mobile-header">
+            <div class="mobile-header-content">
+                <a href="index.html" class="mobile-logo">
+                    <img src="images/logo.svg" alt="infoHiroki Logo" width="36" height="36">
+                    <span class="mobile-title">infoHiroki</span>
+                </a>
+                <button class="hamburger-button" aria-label="メニューを開く">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- デスクトップ用サイドバー / モバイル用オーバーレイメニュー -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="site-title">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="infoHiroki Logo" width="36" height="36">
+                    </div>
+                    <div class="title-text">
+                        <span class="company-name">infoHiroki</span>
+                    </div>
+                </a>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">ブログ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">サービス</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="scenarios.html" class="nav-link">導入シナリオ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">開発製品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="results.html" class="nav-link">実績</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">スキルスタック</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">お問い合わせ</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- モバイル用オーバーレイ -->
+        <div class="mobile-overlay"></div>
+
+        <div class="main-wrapper">
+            <main class="site-main">
+                <section class="page-header">
+                    <div class="container">
+                        <h1>業界別導入シナリオ</h1>
+                        <p class="section-subtitle">あなたの業界に合わせた具体的な生成AI導入の流れをご確認ください</p>
+                    </div>
+                </section>
+
+                <section class="case-scenarios">
+                    <div class="container">
+                        <div class="scenario-tabs">
+                            <button class="scenario-tab active" onclick="showScenario('medical')">
+                                <span class="tab-icon">🏥</span>
+                                <span class="tab-text">医療機関</span>
+                            </button>
+                            <button class="scenario-tab" onclick="showScenario('construction')">
+                                <span class="tab-icon">🏗️</span>
+                                <span class="tab-text">建築・建設業</span>
+                            </button>
+                            <button class="scenario-tab" onclick="showScenario('training')">
+                                <span class="tab-icon">📚</span>
+                                <span class="tab-text">企業研修</span>
+                            </button>
+                        </div>
+                        
+                        <div class="scenario-content">
+                            <!-- 医療機関シナリオ -->
+                            <div id="medical-scenario" class="scenario-panel active">
+                                <div class="scenario-header">
+                                    <h3>医療機関での導入事例</h3>
+                                    <div class="scenario-profile">
+                                        <p><strong>想定企業</strong>: 従業員50名の医療法人</p>
+                                        <p><strong>課題</strong>: 月40時間の議事録作成業務が総務部の負担に</p>
+                                        <p><strong>解決策</strong>: Whisper + ChatGPT による議事録自動化</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">Week 1</div>
+                                        <div class="timeline-content">
+                                            <h4>無料相談（1.5時間）</h4>
+                                            <ul>
+                                                <li>現状の議事録作成プロセス確認</li>
+                                                <li>Whisper導入効果シミュレーション</li>
+                                                <li>技術顧問契約のご提案</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">Week 2-3</div>
+                                        <div class="timeline-content">
+                                            <h4>システム設定</h4>
+                                            <ul>
+                                                <li>録音環境の最適化</li>
+                                                <li>Whisper + ChatGPT連携構築</li>
+                                                <li>テスト運用開始</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">Week 4-5</div>
+                                        <div class="timeline-content">
+                                            <h4>スタッフ研修</h4>
+                                            <ul>
+                                                <li>録音機器の使い方指導</li>
+                                                <li>AI生成議事録の確認・修正方法</li>
+                                                <li>運用ルール策定</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">Week 6-8</div>
+                                        <div class="timeline-content">
+                                            <h4>本格運用・効果測定</h4>
+                                            <ul>
+                                                <li>全会議でのAI議事録導入</li>
+                                                <li>作業時間測定・コスト算出</li>
+                                                <li>運用課題の解決</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="scenario-result">
+                                    <h4>導入結果</h4>
+                                    <div class="result-metrics">
+                                        <div class="metric">
+                                            <span class="metric-label">作業時間</span>
+                                            <span class="metric-value">4時間→48分</span>
+                                            <span class="metric-change">80%削減</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-label">月間コスト</span>
+                                            <span class="metric-value">20万円→5万円</span>
+                                            <span class="metric-change">15万円削減</span>
+                                        </div>
+                                    </div>
+                                    <blockquote class="client-voice">
+                                        「手作業で4時間かかっていた議事録作成が48分に短縮。スタッフの残業が激減しました」
+                                        <cite>- 桜十字福岡病院 総務部</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            
+                            <!-- 建築・建設業シナリオ -->
+                            <div id="construction-scenario" class="scenario-panel">
+                                <div class="scenario-header">
+                                    <h3>建築・建設業での導入事例</h3>
+                                    <div class="scenario-profile">
+                                        <p><strong>実績企業</strong>: 建築事務所・建設コンサル（2社導入済み）</p>
+                                        <p><strong>課題</strong>: 報告書作成・現場記録業務の効率化、ドローン解析データ活用</p>
+                                        <p><strong>解決策</strong>: AI音声文字起こし + マクロ自動化による書類作成効率化</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">Week 1</div>
+                                        <div class="timeline-content">
+                                            <h4>現状分析・課題特定</h4>
+                                            <ul>
+                                                <li>現場会議記録プロセスの確認</li>
+                                                <li>報告書作成の工数分析</li>
+                                                <li>ドローン解析データの管理状況調査</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">Week 2-4</div>
+                                        <div class="timeline-content">
+                                            <h4>システム構築・導入</h4>
+                                            <ul>
+                                                <li>現場用音声文字起こしシステム設定</li>
+                                                <li>報告書自動生成マクロ開発</li>
+                                                <li>ドローン解析結果の効率化ツール実装</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">Week 5-6</div>
+                                        <div class="timeline-content">
+                                            <h4>運用指導・フォローアップ</h4>
+                                            <ul>
+                                                <li>現場スタッフへの操作研修</li>
+                                                <li>品質チェック体制の構築</li>
+                                                <li>継続運用サポート</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="scenario-result">
+                                    <h4>導入結果</h4>
+                                    <div class="result-metrics">
+                                        <div class="metric">
+                                            <span class="metric-label">報告書作成時間</span>
+                                            <span class="metric-value">大幅短縮</span>
+                                            <span class="metric-change">効率化達成</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-label">現場記録業務</span>
+                                            <span class="metric-value">自動化</span>
+                                            <span class="metric-change">業務効率化</span>
+                                        </div>
+                                    </div>
+                                    <blockquote class="client-voice">
+                                        「現場会議の記録が自動化され、本来の設計・施工業務に集中できるようになりました」
+                                        <cite>- 九州地区建設コンサル</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            
+                            <!-- 企業研修シナリオ -->
+                            <div id="training-scenario" class="scenario-panel">
+                                <div class="scenario-header">
+                                    <h3>企業研修での導入事例</h3>
+                                    <div class="scenario-profile">
+                                        <p><strong>実績企業</strong>: 各業界企業（研修実績あり）</p>
+                                        <p><strong>課題</strong>: 社員のAI活用スキル不足、DX人材育成の必要性</p>
+                                        <p><strong>解決策</strong>: 4時間×4回のAI研修プログラム + 助成金活用</p>
+                                    </div>
+                                </div>
+
+                                <div class="training-highlight">
+                                    <h4>🎯 助成金活用で実質負担大幅軽減</h4>
+                                    <div class="subsidy-info">
+                                        <div class="subsidy-item">
+                                            <h5>人材開発支援助成金</h5>
+                                            <p>研修費用の<strong>50-75%</strong>を国が負担</p>
+                                        </div>
+                                        <div class="subsidy-item">
+                                            <h5>DX人材育成助成金</h5>
+                                            <p>デジタル人材育成で<strong>最大80%</strong>助成</p>
+                                        </div>
+                                    </div>
+                                    <p class="subsidy-note">※助成金申請サポートも含まれます</p>
+                                </div>
+                                
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">Week 1</div>
+                                        <div class="timeline-content">
+                                            <h4>助成金申請サポート</h4>
+                                            <ul>
+                                                <li>適用可能な助成金の調査・選定</li>
+                                                <li>申請書類作成支援</li>
+                                                <li>研修計画策定・カリキュラム設計</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">Week 2-5</div>
+                                        <div class="timeline-content">
+                                            <h4>AI研修プログラム実施</h4>
+                                            <ul>
+                                                <li>第1回：ChatGPT基礎活用（4時間）</li>
+                                                <li>第2回：Claude長文分析活用（4時間）</li>
+                                                <li>第3回：Whisper音声認識活用（4時間）</li>
+                                                <li>第4回：実務への適用・運用（4時間）</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">Week 6</div>
+                                        <div class="timeline-content">
+                                            <h4>フォローアップ・継続提案</h4>
+                                            <ul>
+                                                <li>研修効果の測定・評価</li>
+                                                <li>実務での活用状況確認</li>
+                                                <li>技術顧問契約のご提案</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="scenario-result">
+                                    <h4>導入結果</h4>
+                                    <div class="result-metrics">
+                                        <div class="metric">
+                                            <span class="metric-label">実質負担</span>
+                                            <span class="metric-value">50-80%軽減</span>
+                                            <span class="metric-change">助成金活用</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-label">研修時間</span>
+                                            <span class="metric-value">16時間</span>
+                                            <span class="metric-change">4回×4時間</span>
+                                        </div>
+                                    </div>
+                                    <blockquote class="client-voice">
+                                        「助成金を活用して全社員のAIスキルが向上。実務への適用もスムーズに進みました」
+                                        <cite>- AI研修受講企業</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="scenario-cta">
+                            <div class="cta-medical" style="display: block;">
+                                <p>桜十字福岡病院と同様の効果を実現したい医療機関の方は</p>
+                                <a href="contact.html" class="button">議事録自動化の効果を相談する</a>
+                            </div>
+                            <div class="cta-construction" style="display: none;">
+                                <p>報告書・現場記録業務の効率化をお考えの建築・建設業の方は</p>
+                                <a href="contact.html" class="button">業務効率化の相談をする</a>
+                            </div>
+                            <div class="cta-training" style="display: none;">
+                                <p>助成金を活用したAI研修をお考えの企業の方は</p>
+                                <a href="contact.html" class="button">助成金活用研修を相談する</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- LINE連絡セクション -->
+                <section class="line-contact-footer">
+                    <div class="container">
+                        <h3>💬 お気軽にご相談ください</h3>
+                        <p>生成AI導入に関するご質問やご相談は、LINEからお気軽にお問い合わせください</p>
+                        <a href="https://lin.ee/8ymv2Nw" target="_blank" rel="noopener noreferrer" class="line-button-footer">
+                            LINEで相談する
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="minimal-footer">
+                <div class="container">
+                    <p>© 2022 infoHiroki. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script>
+        // 業界別導入シナリオのタブ切り替え
+        function showScenario(type) {
+            // すべてのタブとパネルを非アクティブに
+            const tabs = document.querySelectorAll('.scenario-tab');
+            const panels = document.querySelectorAll('.scenario-panel');
+            const ctaSections = document.querySelectorAll('.scenario-cta > div');
+            
+            tabs.forEach(tab => tab.classList.remove('active'));
+            panels.forEach(panel => panel.classList.remove('active'));
+            ctaSections.forEach(cta => cta.style.display = 'none');
+            
+            // 選択されたタブとパネルをアクティブに
+            const activeTab = Array.from(tabs).find(tab => 
+                tab.onclick.toString().includes(type)
+            );
+            const activePanel = document.getElementById(`${type}-scenario`);
+            const activeCTA = document.querySelector(`.cta-${type}`);
+            
+            if (activeTab) activeTab.classList.add('active');
+            if (activePanel) activePanel.classList.add('active');
+            if (activeCTA) activeCTA.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
