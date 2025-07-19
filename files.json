@@ -1306,6 +1306,59 @@
         "技術革新"
       ],
       "created": "2025-07-07"
+    },
+    {
+      "id": "chatgpt-agent-mode-guide",
+      "path": "2025-07-19-chatgpt-agent-mode-guide.html",
+      "title": "ChatGPTエージェントモード完全ガイド",
+      "description": "ChatGPTエージェントモードの機能、制限事項、他サービスとの比較を詳しく解説。ブラウザ自動操作やアプリ開発の実演例も紹介。",
+      "icon": "./images/ChatGPT icon.webp",
+      "tags": [
+        "ChatGPT",
+        "AIエージェント",
+        "自動化",
+        "ブラウザ操作",
+        "アプリ開発",
+        "AI活用",
+        "生産性向上"
+      ],
+      "created": "2025-07-19"
+    },
+    {
+      "id": "nextjs-hosting-comparison",
+      "path": "2025-07-19-nextjs-hosting-comparison.html",
+      "title": "Next.js App Router ホスティング比較",
+      "description": "Next.js App Routerに対応したホスティングサービスの料金、機能、パフォーマンスを徹底比較。Vercel、Netlify、Cloudflareなど主要サービスを詳細分析。",
+      "icon": "https://skillicons.dev/icons?i=nextjs",
+      "tags": [
+        "Next.js",
+        "App Router",
+        "ホスティング",
+        "Vercel",
+        "Netlify",
+        "Cloudflare",
+        "比較検討",
+        "Webサービス"
+      ],
+      "created": "2025-07-19"
+    },
+    {
+      "id": "gemini-cli-guide",
+      "path": "2025-07-19-gemini-cli-guide.html",
+      "title": "Gemini CLI活用ガイド",
+      "description": "GoogleのAIコーディング支援ツールGemini CLIの使い方を徹底解説。セットアップ手順、主要コマンド、Claude Codeとの比較まで実践的ガイド。",
+      "icon": "./images/Gemini.png",
+      "tags": [
+        "Gemini CLI",
+        "Google",
+        "AI開発",
+        "コーディング支援",
+        "CLI",
+        "プログラミング",
+        "開発ツール",
+        "無料ツール"
+      ],
+      "created": "2025-07-19"
     }
   ]
 }
