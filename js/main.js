@@ -4,17 +4,37 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             const email = this.href.replace('mailto:', '');
-            navigator.clipboard.writeText(email);
             
-            // 簡単な通知
-            const notification = document.createElement('div');
-            notification.textContent = 'コピーしました';
-            notification.className = 'copy-notification';
-            document.body.appendChild(notification);
-            
-            setTimeout(() => notification.remove(), 2000);
+            // クリップボードAPIのエラーハンドリング
+            navigator.clipboard.writeText(email).then(() => {
+                // 成功時の通知
+                showNotification('コピーしました');
+            }).catch(() => {
+                // フォールバック：テキスト選択でコピー
+                const textArea = document.createElement('textarea');
+                textArea.value = email;
+                textArea.style.position = 'fixed';
+                textArea.style.opacity = '0';
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showNotification('コピーしました');
+            });
         });
     });
+    
+    // 通知表示関数（アクセシビリティ対応）
+    function showNotification(message) {
+        const notification = document.createElement('div');
+        notification.textContent = message;
+        notification.className = 'copy-notification';
+        notification.setAttribute('aria-live', 'polite');
+        notification.setAttribute('role', 'status');
+        document.body.appendChild(notification);
+        
+        setTimeout(() => notification.remove(), 2000);
+    }
 
     // ハンバーガーメニュー機能
     const hamburgerButton = document.querySelector('.hamburger-button');
