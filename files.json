@@ -1416,7 +1416,7 @@
     },
     {
       "id": "gpt-oss-local-guide",
-      "path": "gpt_oss_infographic.html",
+      "path": "2025-08-09-gpt-oss-local-guide.html",
       "title": "GPT-OSS ローカル実行ガイド",
       "description": "OpenAIが公開したGPT-OSSをローカルPCで動かす方法。LMStudioでの導入手順や性能ベンチマークを詳しく解説。",
       "icon": "🤖",
