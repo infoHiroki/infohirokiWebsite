@@ -1413,6 +1413,23 @@
         "本番運用"
       ],
       "created": "2025-08-04"
+    },
+    {
+      "id": "gpt-oss-local-guide",
+      "path": "gpt_oss_infographic.html",
+      "title": "GPT-OSS ローカル実行ガイド",
+      "description": "OpenAIが公開したGPT-OSSをローカルPCで動かす方法。LMStudioでの導入手順や性能ベンチマークを詳しく解説。",
+      "icon": "🤖",
+      "tags": [
+        "GPT-OSS",
+        "AI",
+        "ローカルAI",
+        "LMStudio",
+        "オープンソース",
+        "Python",
+        "チュートリアル"
+      ],
+      "created": "2025-08-09"
     }
   ]
 }
