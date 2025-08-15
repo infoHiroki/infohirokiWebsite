@@ -1448,6 +1448,23 @@
         "開発効率"
       ],
       "created": "2025-08-11"
+    },
+    {
+      "id": "davinci-resolve-install-guide",
+      "path": "2025-08-15-davinci-resolve-install-guide.html",
+      "title": "DaVinci Resolveインストール＆初期設定ガイド",
+      "description": "認定トレーナーが教える完全マニュアル。インストールから初期設定まで初心者向けに詳しく解説。解像度、フレームレート設定も網羅。",
+      "icon": "🎬",
+      "tags": [
+        "DaVinci Resolve",
+        "動画編集",
+        "インストール",
+        "初期設定",
+        "チュートリアル",
+        "初心者向け",
+        "プロジェクト設定"
+      ],
+      "created": "2025-08-15"
     }
   ]
 }
