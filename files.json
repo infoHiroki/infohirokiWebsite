@@ -1465,6 +1465,24 @@
         "プロジェクト設定"
       ],
       "created": "2025-08-15"
+    },
+    {
+      "id": "google-deep-research-diffusion",
+      "path": "2025-08-25-google-deep-research-diffusion.html",
+      "title": "Google Deep Research - Test-Time Diffusion解説",
+      "description": "GoogleのTest-Time Diffusion技術による次世代AI調査システムの包括的解説。従来手法との比較、性能評価、技術的インサイトまで詳しく紹介。",
+      "icon": "🔍",
+      "tags": [
+        "AI",
+        "Google",
+        "Deep Research",
+        "Test-Time Diffusion",
+        "調査システム",
+        "OpenAI比較",
+        "技術解説",
+        "Self-Evolution"
+      ],
+      "created": "2025-08-25"
     }
   ]
 }
